@@ -11,7 +11,6 @@ const routes = [
 
 const Router = () => {
   const ctx = useContext(ContentContext);
-  console.log(ctx);
 
   return (
     <Switch>
@@ -25,7 +24,7 @@ const Router = () => {
               ctx.addContent(r.path, staticContext);
 
               const Component = r.component;
-              return <Component />;
+              return <Component content={ctx.pages[r.path]} />;
             }} />
         )
       }
