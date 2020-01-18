@@ -8,7 +8,13 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background-color: ${colors.blueGrey};
+    font-size: 16px;
     margin: 0;
+  }
+
+  @font-face {
+    font-family: PressStart2P;
+    src: url('/fonts/PressStart2P-Regular.ttf');
   }
 `;
 
