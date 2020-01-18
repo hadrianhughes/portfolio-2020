@@ -5,13 +5,17 @@ import { truthy } from '../../utils';
 
 const Heading = ({ text, lines }) => {
   const realLines = lines.filter(truthy);
-  realLines.forEach(l => console.log(l.length));
 
   return (
     <H1>
       {
         realLines.length > 0 ?
-          realLines.map((l, i) => <Span length={l.length} index={i}>{l}</Span>)
+          realLines.map((l, i) =>
+            <Span
+              key={l}
+              length={l.length}
+              index={i}>{l}</Span>
+          )
           :
           <Span length={text.length}>{text}</Span>
       }
