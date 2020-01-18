@@ -9,7 +9,7 @@ export const Span = styled.span`
   animation-delay: ${props => 1.5 * props.index}s;
   animation-fill-mode: forwards;
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   overflow: hidden;
   text-align: center;
   white-space: nowrap;
