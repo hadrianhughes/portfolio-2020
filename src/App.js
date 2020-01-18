@@ -1,11 +1,14 @@
 import React, { Fragment } from 'react';
 import Router from './Router';
 import GlobalStyles from './styles/global';
+import { ContentProvider } from './context/Content';
 
 const App = () => (
   <Fragment>
     <GlobalStyles />
-    <Router />
+    <ContentProvider>
+      <Router />
+    </ContentProvider>
   </Fragment>
 );
 
