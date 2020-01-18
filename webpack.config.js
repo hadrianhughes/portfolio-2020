@@ -23,7 +23,8 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin([
-      { from: 'static' }
+      { from: 'src/static' },
+      { from: 'src/api', to: 'api' }
     ])
   ]
 };
