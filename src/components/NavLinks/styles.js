@@ -17,12 +17,28 @@ export const Item = styled.li`
     &::before, a {
       color: yellow;
     }
+
+    &::before {
+      animation: 1s wiggle ease-in-out infinite;
+    }
   }
 
   &::before {
     content: '>';
     display: inline-block;
     width: 30px;
+  }
+
+  @keyframes wiggle {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 `;
 
