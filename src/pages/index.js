@@ -12,11 +12,19 @@ const IndexPage = ({ content }) => (
 );
 
 IndexPage.propTypes = {
-  content: PropTypes.object
+  content: PropTypes.shape({
+    heading1: PropTypes.string,
+    heading2: PropTypes.string,
+    links: PropTypes.arrayOf(PropTypes.object)
+  })
 };
 
 IndexPage.defaultProps = {
-  content: {}
+  content: {
+    heading1: '',
+    heading2: '',
+    links: []
+  }
 };
 
 export default IndexPage;
