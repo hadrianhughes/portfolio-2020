@@ -1,15 +1,26 @@
 import React, { Fragment } from 'react';
-import Router from './Router';
+import PropTypes from 'prop-types';
+import Page from './components/Page';
+import Heading from './components/Heading';
+import NavLinks from './components/NavLinks';
 import GlobalStyles from './styles/global';
-import { ContentProvider } from './context/Content';
 
-const App = () => (
+const App = ({ context }) => (
   <Fragment>
     <GlobalStyles />
-    <ContentProvider>
-      <Router />
-    </ContentProvider>
+    <Page>
+      <Heading lines={[context.headingLineOne, context.headingLineTwo]} />
+      <NavLinks links={context.navLinks} />
+    </Page>
   </Fragment>
 );
+
+App.propTypes = {
+  context: PropTypes.object
+};
+
+App.defaultProps = {
+  context: {}
+};
 
 export default App;

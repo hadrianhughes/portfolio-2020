@@ -1,0 +1,10 @@
+{
+  "headingLineOne": "Hi, I'm Hadrian.",
+  "headingLineTwo": "I write code.",
+  "navLinks": [
+    {
+      "href": "#skills",
+      "text": "My Skills"
+    }
+  ]
+}

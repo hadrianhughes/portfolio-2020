@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { rem } from '../../styles/tools';
-import { Link } from 'react-router-dom';
 
 const width = rem(300);
 
@@ -42,6 +41,6 @@ export const Item = styled.li`
   }
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled.a`
   text-decoration: none;
 `;

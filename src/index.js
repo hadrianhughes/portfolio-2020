@@ -1,13 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
-const el = document.createElement('div');
-document.body.appendChild(el);
+const el = document.getElementById('root');
 
-ReactDOM.hydrate(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-, el);
+ReactDOM.hydrate(<App context={window.APP_CONTEXT} />, el);

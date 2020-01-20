@@ -7,7 +7,7 @@ const NavLinks = ({ links }) => (
     {
       links.map(l =>
         <Item key={l.href}>
-          <StyledLink to={l.href}>{l.text}</StyledLink>
+          <StyledLink href={l.href}>{l.text}</StyledLink>
         </Item>
       )
     }

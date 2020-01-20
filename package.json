@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest ./src",
     "lint": "eslint ./src",
-    "develop": "webpack-dev-server",
-    "build": "webpack && node build",
+    "develop": "node scripts/pre-develop && webpack-dev-server",
+    "build": "webpack && node scripts/build",
     "serve": "serve ./build"
   },
   "author": "Hadrian Hughes",
