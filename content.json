@@ -1,10 +1,13 @@
 {
-  "headingLineOne": "Hi, I'm Hadrian.",
-  "headingLineTwo": "I write code.",
-  "navLinks": [
-    {
-      "href": "#skills",
-      "text": "My Skills"
-    }
-  ]
+  "title": "Hadrian Hughes",
+  "home": {
+    "headingLineOne": "Hi, I'm Hadrian.",
+    "headingLineTwo": "I write code.",
+    "navLinks": [
+      {
+        "href": "#skills",
+        "text": "My Skills"
+      }
+    ]
+  }
 }
