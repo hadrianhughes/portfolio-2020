@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 import { rem } from '../../styles/tools';
 
-const topMargin = rem(300);
+const topPadding = rem(300);
 
 export const Main = styled.main`
-  ${props => props.topMargin ? `margin-top: ${topMargin};` : ''}
+  box-sizing: border-box;
+  min-height: 100vh;
+
+  ${props => props.topPadding ? `padding-top: ${topPadding};` : ''}
 `;

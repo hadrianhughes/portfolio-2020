@@ -2,17 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Main } from './styles';
 
-const Page = ({ children, topMargin }) => (
-  <Main topMargin={topMargin}>{children}</Main>
+const Page = ({ children, topPadding }) => (
+  <Main topPadding={topPadding}>{children}</Main>
 );
 
 Page.propTypes = {
   children: PropTypes.node.isRequired,
-  topMargin: PropTypes.bool
+  topPadding: PropTypes.bool
 };
 
 Page.defaultProps = {
-  topMargin: false
+  topPadding: false
 };
 
 export default Page;
