@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../styles/settings';
 import { rem } from '../../styles/tools';
 
 const width = rem(300);
@@ -14,7 +15,7 @@ export const List = styled.ul`
 export const Item = styled.li`
   &:hover {
     &::before, a {
-      color: yellow;
+      color: ${colors.yellow};
     }
 
     &::before {
