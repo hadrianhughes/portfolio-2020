@@ -12,6 +12,11 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
 
+  #root {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+
   @font-face {
     font-family: PressStart2P;
     src: url('/fonts/PressStart2P-Regular.ttf');

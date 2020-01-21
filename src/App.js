@@ -3,14 +3,16 @@ import PropTypes from 'prop-types';
 import GlobalStyles from './styles/global';
 import { ScrollProvider } from './context/ScrollContext';
 import Home from './pages/Home';
+import ProgressLinks from './components/ProgressLinks';
 import Skills from './pages/Skills';
 
 const App = ({ context }) => (
   <Fragment>
     <GlobalStyles />
     <ScrollProvider>
-      <Home context={context} />
-      <Skills context={context} />
+      <Home context={context.home} />
+      <ProgressLinks links={context.navLinks} />
+      <Skills context={context.skills} />
     </ScrollProvider>
   </Fragment>
 );

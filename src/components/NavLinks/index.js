@@ -3,19 +3,17 @@ import PropTypes from 'prop-types';
 import { ScrollContext } from '../../context/ScrollContext';
 import { List, Item, StyledLink } from './styles';
 
-const NavLinks = ({ links }) => {
-  return (
-    <List>
-      {
-        links.map(l =>
-          <Item key={l.href}>
-            <StyledLink href={l.href}>{l.text}</StyledLink>
-          </Item>
-        )
-      }
-    </List>
-  );
-};
+const NavLinks = ({ links }) => (
+  <List>
+    {
+      links.map(l =>
+        <Item key={l.href}>
+          <StyledLink href={l.href}>{l.text}</StyledLink>
+        </Item>
+      )
+    }
+  </List>
+);
 
 NavLinks.propTypes = {
   links: PropTypes.arrayOf(

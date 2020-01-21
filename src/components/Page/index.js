@@ -7,25 +7,29 @@ const Page = ({
   children,
   id,
   theRef,
-  topPadding
+  topPadding,
+  fullWidth
 }) => (
   <Section
     id={id}
     ref={theRef}
-    topPadding={topPadding}>{children}</Section>
+    topPadding={topPadding}
+    fullWidth={fullWidth}>{children}</Section>
 );
 
 Page.propTypes = {
   children: PropTypes.node.isRequired,
   id: PropTypes.string,
   theRef: PropTypes.object,
-  topPadding: PropTypes.bool
+  topPadding: PropTypes.bool,
+  fullWidth: PropTypes.bool
 };
 
 Page.defaultProps = {
   id: '',
   theRef: null,
-  topPadding: false
+  topPadding: false,
+  fullWidth: false
 };
 
 export default Page;

@@ -6,6 +6,11 @@ const leftPosition = rem(100);
 const topPadding = rem(100);
 const width = rem(200);
 
+export const Nav = styled.nav`
+  grid-column-start: 1;
+  grid-column-end: span 2;
+`;
+
 export const List = styled.ul`
   font-family: PressStart2P;
   font-size: ${rem(12)};

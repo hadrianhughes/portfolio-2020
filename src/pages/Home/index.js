@@ -6,13 +6,12 @@ import Heading from '../../components/Heading';
 import NavLinks from '../../components/NavLinks';
 
 const Home = ({ context }) => {
-  const content = context.home;
   const { refs } = useContext(ScrollContext);
 
   return (
-    <Page theRef={refs.home} topPadding>
-      <Heading lines={[content.headingLineOne, content.headingLineTwo]} />
-      <NavLinks links={content.navLinks} />
+    <Page theRef={refs.home} topPadding fullWidth>
+      <Heading lines={[context.headingLineOne, context.headingLineTwo]} />
+      <NavLinks links={context.navLinks} />
     </Page>
   );
 };

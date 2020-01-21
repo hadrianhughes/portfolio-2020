@@ -9,7 +9,6 @@ const Skills = ({ context }) => {
 
   return (
     <Page theRef={refs.skills}>
-      <ProgressLinks links={context.navLinks} />
     </Page>
   );
 };

@@ -1,17 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { List, Item, StyledLink } from './styles';
+import { Nav, List, Item, StyledLink } from './styles';
 
 const ProgressLinks = ({ links }) => (
-  <List>
-    {
-      links.map(l =>
-        <Item key={l.href}>
-          <StyledLink href={l.href}>{l.text}</StyledLink>
-        </Item>
-      )
-    }
-  </List>
+  <Nav>
+    <List>
+      {
+        links.map(l =>
+          <Item key={l.href}>
+            <StyledLink href={l.href}>{l.text}</StyledLink>
+          </Item>
+        )
+      }
+    </List>
+  </Nav>
 );
 
 ProgressLinks.propTypes = {
