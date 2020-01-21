@@ -2,8 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Main } from './styles';
 
-const Page = ({ children, id, topPadding }) => (
-  <Main id={id} topPadding={topPadding}>{children}</Main>
+const Page = ({ children, id, theRef, topPadding }) => (
+  <Main
+    id={id}
+    ref={theRef}
+    topPadding={topPadding}>{children}</Main>
 );
 
 Page.propTypes = {
