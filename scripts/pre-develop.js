@@ -10,6 +10,7 @@ const html = oneLine`
   <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>${content.title}</title>
     <script>window.APP_CONTEXT = ${JSON.stringify(content)};</script>
   </head>

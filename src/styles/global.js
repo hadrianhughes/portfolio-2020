@@ -1,4 +1,5 @@
 import { colors } from './settings';
+import { minWidth } from './tools';
 import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
@@ -14,7 +15,11 @@ const GlobalStyles = createGlobalStyle`
 
   #root {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+
+    ${minWidth('medium')} {
+      grid-template-columns: repeat(8, 1fr);
+    }
   }
 
   @font-face {

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { rem } from '../../styles/tools';
+import { rem, minWidth } from '../../styles/tools';
 import Link from '../Link';
 
 const leftPosition = rem(100);
@@ -7,8 +7,13 @@ const topPadding = rem(100);
 const width = rem(200);
 
 export const Nav = styled.nav`
+  display: none;
   grid-column-start: 1;
   grid-column-end: span 2;
+
+  ${minWidth('medium')} {
+    display: block;
+  }
 `;
 
 export const List = styled.ul`

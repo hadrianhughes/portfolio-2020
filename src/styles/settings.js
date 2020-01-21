@@ -6,3 +6,8 @@ export const colors = {
   blueGrey: '#32333d',
   yellow: '#ffff99'
 };
+
+export const breakpoints = {
+  small: 375,
+  medium: 768
+};
