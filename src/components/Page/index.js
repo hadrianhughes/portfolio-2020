@@ -1,22 +1,30 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Main } from './styles';
+import ProgressLinks from '../ProgressLinks';
+import { Section } from './styles';
 
-const Page = ({ children, id, theRef, topPadding }) => (
-  <Main
+const Page = ({
+  children,
+  id,
+  theRef,
+  topPadding
+}) => (
+  <Section
     id={id}
     ref={theRef}
-    topPadding={topPadding}>{children}</Main>
+    topPadding={topPadding}>{children}</Section>
 );
 
 Page.propTypes = {
   children: PropTypes.node.isRequired,
   id: PropTypes.string,
+  theRef: PropTypes.object,
   topPadding: PropTypes.bool
 };
 
 Page.defaultProps = {
   id: '',
+  theRef: null,
   topPadding: false
 };
 
