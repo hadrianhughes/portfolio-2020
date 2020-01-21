@@ -44,4 +44,5 @@ export const Item = styled.li`
 
 export const StyledLink = styled.a`
   text-decoration: none;
+  transition: color 0.2s;
 `;
