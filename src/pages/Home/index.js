@@ -5,7 +5,7 @@ import Heading from '../../components/Heading';
 import NavLinks from '../../components/NavLinks';
 
 const Home = ({ context }) => (
-  <Page>
+  <Page topMargin>
     <Heading lines={[context.headingLineOne, context.headingLineTwo]} />
     <NavLinks links={context.navLinks} />
   </Page>

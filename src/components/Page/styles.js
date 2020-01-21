@@ -4,5 +4,5 @@ import { rem } from '../../styles/tools';
 const topMargin = rem(300);
 
 export const Main = styled.main`
-  margin-top: ${topMargin};
+  ${props => props.topMargin ? `margin-top: ${topMargin};` : ''}
 `;
