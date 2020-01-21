@@ -1,16 +1,23 @@
 import styled from 'styled-components';
 import { colors } from '../../styles/settings';
-import { rem } from '../../styles/tools';
+import { rem, minWidth } from '../../styles/tools';
 import Link from '../Link';
 
 const width = rem(300);
+const fontSize = rem(14);
+const desktopFontSize = rem(16);
 
 export const List = styled.ul`
   font-family: PressStart2P;
+  font-size: ${fontSize};
   list-style-type: none;
   margin: ${rem(50)} auto 0;
   padding-left: ${rem(75)};
   width: ${width};
+
+  ${minWidth('medium')} {
+    font-size: ${desktopFontSize};
+  }
 `;
 
 export const Item = styled.li`

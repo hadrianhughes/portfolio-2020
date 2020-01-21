@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { rem, minWidth } from '../../styles/tools';
 
-const fontSize = 14;
+const fontSize = 16;
 const desktopFontSize = 32;
 
 export const H1 = styled.h1`
