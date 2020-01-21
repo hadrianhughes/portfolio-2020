@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { colors } from '../../styles/settings';
 import { rem } from '../../styles/tools';
+import Link from '../Link';
 
 const width = rem(300);
 
@@ -42,7 +43,7 @@ export const Item = styled.li`
   }
 `;
 
-export const StyledLink = styled.a`
+export const StyledLink = styled(Link)`
   text-decoration: none;
   transition: color 0.2s;
 `;

@@ -9,8 +9,8 @@ const App = ({ context }) => (
   <Fragment>
     <GlobalStyles />
     <ScrollProvider>
-      <Home context={context.home} />
-      <Skills />
+      <Home context={context} />
+      <Skills context={context} />
     </ScrollProvider>
   </Fragment>
 );

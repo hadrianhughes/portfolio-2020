@@ -1,5 +1,15 @@
 {
   "title": "Hadrian Hughes",
+  "navLinks": [
+    {
+      "href": "#home",
+      "text": "Home"
+    },
+    {
+      "href": "#skills",
+      "text": "My Skills"
+    }
+  ],
   "home": {
     "headingLineOne": "Lorem ipsum dolor.",
     "headingLineTwo": "Sit amet.",

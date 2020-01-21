@@ -8,9 +8,7 @@ const sectionRefs = ['home', 'skills'];
 export const ScrollProvider = ({ children }) => {
   const refs = sectionRefs.reduce((acc, name) => ({ ...acc, [name]: useRef(null) }), {});
 
-  const scrollTo = (e, name) => {
-    e.preventDefault();
-
+  const scrollTo = name => {
     refs[name].current.scrollIntoView({ behavior: 'smooth' });
   };
 
