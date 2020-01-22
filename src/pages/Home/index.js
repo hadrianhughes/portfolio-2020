@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { ScrollContext } from '../../context/ScrollContext';
 import Page from '../../components/Page';
@@ -6,10 +6,15 @@ import Heading from '../../components/Heading';
 import NavLinks from '../../components/NavLinks';
 
 const Home = ({ context }) => {
-  const { refs } = useContext(ScrollContext);
+  const ref = useRef();
+  const { setSectionRef } = useContext(ScrollContext);
+
+  useEffect(() => {
+    setSectionRef('home', ref.current);
+  }, []);
 
   return (
-    <Page theRef={refs.home} topPadding fullWidth>
+    <Page theRef={ref} topPadding fullWidth>
       <Heading lines={[context.headingLineOne, context.headingLineTwo]} />
       <NavLinks links={context.navLinks} />
     </Page>

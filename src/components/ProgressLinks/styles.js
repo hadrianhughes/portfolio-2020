@@ -31,6 +31,11 @@ export const List = styled.ul`
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
+
+  &::before {
+    content: '>';
+    margin-right: ${rem(30)};
+  }
 `;
 
 export const Item = styled.li`

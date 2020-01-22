@@ -1,14 +1,19 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { ScrollContext } from '../../context/ScrollContext';
 import Page from '../../components/Page';
 import ProgressLinks from '../../components/ProgressLinks';
 
 const Skills = ({ context }) => {
-  const { refs } = useContext(ScrollContext);
+  const ref = useRef();
+  const { setSectionRef } = useContext(ScrollContext);
+
+  useEffect(() => {
+    setSectionRef('skills', ref.current);
+  }, []);
 
   return (
-    <Page theRef={refs.skills}>
+    <Page theRef={ref}>
     </Page>
   );
 };
