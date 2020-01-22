@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../styles/settings';
 import { rem, minWidth } from '../../styles/tools';
 import Link from '../Link';
 
@@ -32,9 +33,15 @@ export const List = styled.ul`
 export const StyledLink = styled(Link)`
   text-decoration: none;
 
+  ${props => props.active ? `color: ${colors.yellow}` : ''}
+
   &::before {
     content: '>';
-    margin-right: ${rem(30)};
+
+    ${props => props.active ?
+      `color: ${colors.yellow}` :
+      `margin-right: ${rem(30)}`
+    }
   }
 `;
 

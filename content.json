@@ -3,10 +3,12 @@
   "navLinks": [
     {
       "href": "#home",
+      "name": "home",
       "text": "Home"
     },
     {
       "href": "#skills",
+      "name": "skills",
       "text": "My Skills"
     }
   ],

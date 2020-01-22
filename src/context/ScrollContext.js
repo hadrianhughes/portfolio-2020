@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 
 export const ScrollContext = React.createContext();
 
-const sectionNames = ['home', 'skills'];
-
-export const ScrollProvider = ({ children }) => {
+export const ScrollProvider = ({ sectionNames, children }) => {
   const [activeSection, setActiveSection] = useState(sectionNames[0]);
 
   const sections = sectionNames.reduce((acc, name) => {
@@ -59,9 +57,11 @@ export const ScrollProvider = ({ children }) => {
 };
 
 ScrollProvider.propTypes = {
+  sectionNames: PropTypes.arrayOf(PropTypes.string),
   children: PropTypes.node
 };
 
 ScrollProvider.defaultProps = {
+  sectionNames: ['home'],
   children: null
 };

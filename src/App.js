@@ -5,11 +5,12 @@ import { ScrollProvider } from './context/ScrollContext';
 import Home from './pages/Home';
 import ProgressLinks from './components/ProgressLinks';
 import Skills from './pages/Skills';
+import { get } from './utils';
 
 const App = ({ context }) => (
   <Fragment>
     <GlobalStyles />
-    <ScrollProvider>
+    <ScrollProvider sectionNames={context.navLinks.map(get(['name']))}>
       <Home context={context.home} />
       <ProgressLinks links={context.navLinks} />
       <Skills context={context.skills} />
