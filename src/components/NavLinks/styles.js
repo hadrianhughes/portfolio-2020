@@ -3,17 +3,23 @@ import { colors } from '../../styles/settings';
 import { rem, minWidth } from '../../styles/tools';
 import Link from '../Link';
 
-const width = rem(300);
 const fontSize = rem(14);
 const desktopFontSize = rem(16);
+
+export const Wrapper = styled.div`
+  margin-top: ${rem(50)};
+  display: flex;
+  justify-content: center;
+`;
 
 export const List = styled.ul`
   font-family: PressStart2P;
   font-size: ${fontSize};
+  display: inline-block;
   list-style-type: none;
-  margin: ${rem(50)} auto 0;
-  padding-left: ${rem(75)};
-  width: ${width};
+  margin: 0;
+  padding: 0;
+  width: auto;
 
   ${minWidth('medium')} {
     font-size: ${desktopFontSize};
