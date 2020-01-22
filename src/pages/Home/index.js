@@ -14,7 +14,10 @@ const Home = ({ context }) => {
   }, []);
 
   return (
-    <Page theRef={ref} topPadding fullWidth>
+    <Page
+      theRef={ref}
+      id="home"
+      topPadding fullWidth>
       <Heading lines={[context.headingLineOne, context.headingLineTwo]} />
       <NavLinks links={context.navLinks} />
     </Page>

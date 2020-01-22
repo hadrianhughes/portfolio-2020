@@ -12,7 +12,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <Page theRef={ref}>
+    <Page id="skills" theRef={ref}>
     </Page>
   );
 };
