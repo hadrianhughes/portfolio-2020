@@ -1,6 +1,6 @@
 import { colors } from './settings';
 import { minWidth } from './tools';
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   * {

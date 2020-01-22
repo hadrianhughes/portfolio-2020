@@ -1,6 +1,5 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { ScrollContext } from '../../context/ScrollContext';
 import { Wrapper, List, Item, StyledLink } from './styles';
 
 const NavLinks = ({ links }) => (

@@ -1,6 +1,5 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import ProgressLinks from '../ProgressLinks';
 import { Section } from './styles';
 
 const Page = ({
