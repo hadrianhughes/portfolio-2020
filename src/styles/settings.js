@@ -1,5 +1,7 @@
 export const baseFontSize = 16;
 
+export const pageMaxWidth = 1440;
+
 export const colors = {
   white: '#fff',
   black: '#000',

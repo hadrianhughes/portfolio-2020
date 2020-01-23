@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { colors } from './settings';
+import { colors, pageMaxWidth } from './settings';
 import { minWidth } from './tools';
 import animations from './animations';
 
@@ -15,6 +15,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   #root {
+    margin: 0 auto;
+    max-width: ${pageMaxWidth}px;
+  }
+
+  main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
