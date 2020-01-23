@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background-color: ${colors.blueGrey};
+    font-family: 'Open Sans';
     font-size: 16px;
     margin: 0;
   }
@@ -31,6 +32,11 @@ const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: PressStart2P;
     src: url('/fonts/PressStart2P-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Regular.ttf');
   }
 
   ${animations}
