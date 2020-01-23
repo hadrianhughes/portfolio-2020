@@ -42,18 +42,6 @@ export const Item = styled.li`
     display: inline-block;
     width: 30px;
   }
-
-  @keyframes wiggle {
-    0% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(-20px);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
 `;
 
 export const StyledLink = styled(Link)`

@@ -1,6 +1,7 @@
+import { createGlobalStyle } from 'styled-components';
 import { colors } from './settings';
 import { minWidth } from './tools';
-import { createGlobalStyle } from 'styled-components';
+import animations from './animations';
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -26,6 +27,8 @@ const GlobalStyles = createGlobalStyle`
     font-family: PressStart2P;
     src: url('/fonts/PressStart2P-Regular.ttf');
   }
+
+  ${animations}
 `;
 
 export default GlobalStyles;

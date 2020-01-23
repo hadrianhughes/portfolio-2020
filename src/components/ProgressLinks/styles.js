@@ -33,15 +33,22 @@ export const List = styled.ul`
 export const StyledLink = styled(Link)`
   text-decoration: none;
 
-  ${props => props.active ? `color: ${colors.yellow}` : ''}
+  ${props => props.active ? `color: ${colors.yellow};` : ''}
+
+  &:hover {
+    color: ${colors.yellow};
+
+    &::before {
+      animation: 1s wiggle ease-in-out infinite;
+    }
+  }
 
   &::before {
     content: '>';
+    display: inline-block;
+    margin-right: ${rem(30)};
 
-    ${props => props.active ?
-      `color: ${colors.yellow}` :
-      `margin-right: ${rem(30)}`
-    }
+    ${props => props.active ? `color: ${colors.yellow};` : '' }
   }
 `;
 
