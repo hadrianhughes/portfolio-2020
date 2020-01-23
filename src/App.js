@@ -2,10 +2,10 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import GlobalStyles from './styles/global';
 import { ScrollProvider } from './context/ScrollContext';
-import Home from './pages/Home';
-import ProgressLinks from './components/ProgressLinks';
+import HomePage from './pages/Home';
+import SkillsPage from './pages/Skills';
+import Nav from './components/ProgressLinks';
 import SiteHeader from './components/SiteHeader';
-import Skills from './pages/Skills';
 import { get } from './utils';
 
 const App = ({ context }) => (
@@ -14,9 +14,9 @@ const App = ({ context }) => (
     <ScrollProvider sectionNames={context.navLinks.map(get(['name']))}>
       <SiteHeader />
       <main>
-        <Home context={context.home} />
-        <ProgressLinks links={context.navLinks} />
-        <Skills context={context.skills} />
+        <HomePage context={context.home} />
+        <Nav links={context.navLinks} />
+        <SkillsPage context={context.skills} />
       </main>
     </ScrollProvider>
   </Fragment>
