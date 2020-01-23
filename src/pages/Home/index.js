@@ -18,7 +18,7 @@ const Home = ({ context }) => {
       theRef={ref}
       id="home"
       topPadding fullWidth>
-      <Heading lines={[context.headingLineOne, context.headingLineTwo]} />
+      <Heading lines={[context.headingLineOne, context.headingLineTwo]} main />
       <NavLinks links={context.navLinks} />
     </Page>
   );

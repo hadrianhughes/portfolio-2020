@@ -2,8 +2,9 @@ import React, { useContext, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { ScrollContext } from '../../context/ScrollContext';
 import Page from '../../components/Page';
+import Heading from '../../components/Heading';
 
-const Skills = () => {
+const Skills = ({ context }) => {
   const ref = useRef();
   const { setSectionRef } = useContext(ScrollContext);
 
@@ -13,6 +14,7 @@ const Skills = () => {
 
   return (
     <Page id="skills" theRef={ref}>
+      <Heading text={context.heading} />
     </Page>
   );
 };

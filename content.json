@@ -23,6 +23,7 @@
     ]
   },
   "skills": {
+    "heading": "My Skills",
     "skills": [
       {
         "name": "React",
