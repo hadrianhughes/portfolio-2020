@@ -46,7 +46,13 @@ export const ScrollProvider = ({ sectionNames, children }) => {
 
   const scrollTo = name => {
     const section = sections[name];
-    if (section) section.el.scrollIntoView({ behavior: 'smooth' });
+    if (section) {
+      if (name === 'home') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        section.el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   };
 
   return (
