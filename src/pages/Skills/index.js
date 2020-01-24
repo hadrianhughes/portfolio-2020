@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { ScrollContext } from '../../context/ScrollContext';
 import Page from '../../components/Page';
 import Heading from '../../components/Heading';
+import SkillsCloud from '../../components/SkillsCloud';
 
 const Skills = ({ context }) => {
   const ref = useRef();
@@ -15,6 +16,7 @@ const Skills = ({ context }) => {
   return (
     <Page id="skills" theRef={ref}>
       <Heading text={context.heading} animate={activeSection === 'skills'} />
+      <SkillsCloud skills={context.skills} />
     </Page>
   );
 };
