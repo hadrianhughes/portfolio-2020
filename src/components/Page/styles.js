@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { rem, minWidth } from '../../styles/tools';
 
-const topPadding = rem(300);
+const topPadding = rem(50);
+const megaTopPadding = rem(300);
 
 export const Section = styled.section`
   box-sizing: border-box;
@@ -9,7 +10,7 @@ export const Section = styled.section`
   grid-column-end: span 2;
   min-height: 100vh;
 
-  ${props => props.topPadding ? `padding-top: ${topPadding};` : ''}
+  ${props => props.topPadding ? `padding-top: ${megaTopPadding};` : `padding-top: ${topPadding};`}
 
   ${minWidth('medium')} {
     ${props => props.fullWidth ? `
