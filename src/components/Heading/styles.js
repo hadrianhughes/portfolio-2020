@@ -25,15 +25,25 @@ export const Span = styled.span`
   white-space: nowrap;
 
   ${props => props.main ? `
-    animation: 1s typewriter${props.index} steps(${props.length});
-    animation-delay: ${props.index}s;
-    animation-fill-mode: forwards;
     width: 0;
 
-    ${minWidth('medium')} {
-      animation-name: desktop_typewriter${props.index};
-    }
-  ` : ''}
+    ${props.animate ? `
+      animation: 1s typewriter${props.index} steps(${props.length});
+      animation-delay: ${props.index}s;
+      animation-fill-mode: forwards;
+
+      ${minWidth('medium')} {
+        animation-name: desktop_typewriter${props.index};
+      }
+    ` : ''}
+  ` : `
+    opacity: 0;
+
+    ${props.animate ? `
+      animation: 1s enter_up;
+      animation-fill-mode: forwards;
+    ` : ''}
+  `}
 
   @keyframes typewriter${props => props.index} {
     0% { width: 0px; }

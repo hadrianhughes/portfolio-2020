@@ -7,7 +7,7 @@ import NavLinks from '../../components/NavLinks';
 
 const Home = ({ context }) => {
   const ref = useRef();
-  const { setSectionRef } = useContext(ScrollContext);
+  const { activeSection, setSectionRef } = useContext(ScrollContext);
 
   useEffect(() => {
     setSectionRef('home', ref.current);
@@ -18,7 +18,10 @@ const Home = ({ context }) => {
       theRef={ref}
       id="home"
       topPadding fullWidth>
-      <Heading lines={[context.headingLineOne, context.headingLineTwo]} main />
+      <Heading
+        lines={[context.headingLineOne, context.headingLineTwo]}
+        animate={activeSection === 'home'}
+        main />
       <NavLinks links={context.navLinks} />
     </Page>
   );

@@ -6,7 +6,7 @@ import Heading from '../../components/Heading';
 
 const Skills = ({ context }) => {
   const ref = useRef();
-  const { setSectionRef } = useContext(ScrollContext);
+  const { activeSection, setSectionRef } = useContext(ScrollContext);
 
   useEffect(() => {
     setSectionRef('skills', ref.current);
@@ -14,7 +14,7 @@ const Skills = ({ context }) => {
 
   return (
     <Page id="skills" theRef={ref}>
-      <Heading text={context.heading} />
+      <Heading text={context.heading} animate={activeSection === 'skills'} />
     </Page>
   );
 };
