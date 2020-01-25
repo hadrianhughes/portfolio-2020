@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { rem, minWidth } from '../../styles/tools';
 
 const topPadding = rem(50);
-const megaTopPadding = rem(300);
+const megaTopPadding = rem(200);
 
 export const Section = styled.section`
   box-sizing: border-box;

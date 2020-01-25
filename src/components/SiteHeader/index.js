@@ -1,10 +1,11 @@
 import React from 'react';
-import Link from '../Link';
-import { StyledHeader } from './styles';
+import { StyledHeader, LogoLink, LogoImg } from './styles';
 
 const SiteHeader = () => (
   <StyledHeader>
-    <Link href="#home">Home</Link>
+    <LogoLink href="#home">
+      <LogoImg src="/icons/logo.svg" alt="Home" />
+    </LogoLink>
   </StyledHeader>
 );
 
