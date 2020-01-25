@@ -2,10 +2,17 @@ import styled, { css } from 'styled-components';
 import { colors } from '../../styles/settings';
 import { rem, minWidth } from '../../styles/tools';
 
+const topMargin = rem(75);
 const previewMaxHeight = rem(300);
+const width = rem(900);
 
 export const Wrapper = styled.div`
+  margin: 0 auto;
   position: relative;
+
+  ${minWidth('medium')} {
+    width: ${width};
+  }
 `;
 
 export const List = styled.ul`
@@ -14,10 +21,12 @@ export const List = styled.ul`
   justify-content: space-around;
   list-style-type: none;
   margin: 0;
-  margin-top: ${rem(50)};
+  margin-top: ${topMargin};
+  max-height: ${rem(1000)};
   overflow: hidden;
   padding: 0;
   position: relative;
+  transition: 0.5s max-height;
 
   ${props => props.preview ? `
     max-height: ${previewMaxHeight};
@@ -43,6 +52,7 @@ export const List = styled.ul`
 `;
 
 const ItemStyles = css`
+  cursor: default;
   font-family: 'Open Sans';
   font-weight: 800;
   margin: 0;
@@ -51,7 +61,7 @@ const ItemStyles = css`
   width: 100%;
 
   ${minWidth('medium')} {
-    margin: ${rem(10)} 0;
+    margin: ${rem(20)} 0;
     padding: 0;
     text-align: center;
     width: auto;
@@ -84,7 +94,7 @@ export const TertiaryItem = styled.li`
   font-size: ${rem(24)};
 
   ${minWidth('medium')} {
-    width: 20%;
+    width: 25%;
   }
 `;
 
@@ -100,4 +110,8 @@ export const ExpandButton = styled.button`
   position: absolute;
   transform: translate(-50%, 50%);
   width: ${rem(30)};
+
+  ${minWidth('medium')} {
+    display: none;
+  }
 `;
