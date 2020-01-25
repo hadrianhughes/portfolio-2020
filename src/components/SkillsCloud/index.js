@@ -27,7 +27,11 @@ const SkillsCloud = ({ skills }) => {
         {secondary.map(mapItem(SecondaryItem))}
         {tertiary.map(mapItem(TertiaryItem))}
       </List>
-      <ExpandButton onClick={() => setPreview(!isPreview)}>+</ExpandButton>
+      <ExpandButton
+        onClick={() => setPreview(!isPreview)}
+        collapsed={isPreview}>
+        Expand
+      </ExpandButton>
     </Wrapper>
   );
 };

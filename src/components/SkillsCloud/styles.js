@@ -99,17 +99,18 @@ export const TertiaryItem = styled.li`
 `;
 
 export const ExpandButton = styled.button`
-  background-color: ${colors.white};
   border: 0;
   border-radius: 50%;
   bottom: 0;
-  color: ${colors.black};
   cursor: pointer;
   height: ${rem(30)};
   left: 50%;
   position: absolute;
+  text-indent: -9999px;
   transform: translate(-50%, 50%);
   width: ${rem(30)};
+
+  ${props => `background-image: url(/icons/${props.collapsed ? 'expand' : 'collapse'}.svg);`}
 
   ${minWidth('medium')} {
     display: none;
