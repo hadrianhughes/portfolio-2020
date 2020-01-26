@@ -4,6 +4,7 @@ import GlobalStyles from './styles/global';
 import { ScrollProvider } from './context/ScrollContext';
 import HomePage from './pages/Home';
 import SkillsPage from './pages/Skills';
+import AboutMe from './pages/About';
 import Nav from './components/ProgressLinks';
 import SiteHeader from './components/SiteHeader';
 import { get } from './utils';
@@ -14,9 +15,10 @@ const App = ({ context }) => (
     <ScrollProvider sectionNames={context.navLinks.map(get(['name']))}>
       <SiteHeader />
       <main>
-        <HomePage context={context.home} />
+        <HomePage context={context.home} navLinks={context.navLinks} />
         <Nav links={context.navLinks} />
         <SkillsPage context={context.skills} />
+        <AboutMe context={context.about} />
       </main>
     </ScrollProvider>
   </Fragment>

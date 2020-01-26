@@ -27,6 +27,8 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
+  padding: ${rem(5)} 0;
+
   &:hover {
     &::before, a {
       color: ${colors.yellow};

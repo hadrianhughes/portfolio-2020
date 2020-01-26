@@ -6,7 +6,9 @@ const NavLinks = ({ links }) => (
   <Wrapper>
     <List>
       {
-        links.map(l =>
+        links
+          .filter(l => !l.noHomePage)
+          .map(l =>
           <Item key={l.href}>
             <StyledLink href={l.href}>{l.text}</StyledLink>
           </Item>

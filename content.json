@@ -4,23 +4,23 @@
     {
       "href": "#home",
       "name": "home",
-      "text": "Home"
+      "text": "Home",
+      "noHomePage": true
     },
     {
       "href": "#skills",
       "name": "skills",
       "text": "My Skills"
+    },
+    {
+      "href": "#about",
+      "name": "about",
+      "text": "About Me"
     }
   ],
   "home": {
     "headingLineOne": "Lorem ipsum dolor.",
-    "headingLineTwo": "Sit amet.",
-    "navLinks": [
-      {
-        "href": "#skills",
-        "text": "My Skills"
-      }
-    ]
+    "headingLineTwo": "Sit amet."
   },
   "skills": {
     "heading": "My Skills",
@@ -98,5 +98,8 @@
         "level": 3
       }
     ]
+  },
+  "about": {
+    "heading": "About Me"
   }
 }

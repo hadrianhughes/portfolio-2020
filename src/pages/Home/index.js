@@ -5,7 +5,7 @@ import Page from '../../components/Page';
 import Heading from '../../components/Heading';
 import NavLinks from '../../components/NavLinks';
 
-const Home = ({ context }) => {
+const Home = ({ context, navLinks }) => {
   const ref = useRef();
   const { activeSection, setSectionRef } = useContext(ScrollContext);
 
@@ -22,17 +22,19 @@ const Home = ({ context }) => {
         lines={[context.headingLineOne, context.headingLineTwo]}
         animate={activeSection === 'home'}
         main />
-      <NavLinks links={context.navLinks} />
+      <NavLinks links={navLinks} />
     </Page>
   );
 };
 
 Home.propTypes = {
-  context: PropTypes.object
+  context: PropTypes.object,
+  navLinks: PropTypes.arrayOf(PropTypes.object)
 };
 
 Home.defaultProps = {
-  context: {}
+  context: {},
+  navLinks: []
 };
 
 export default Home;

@@ -11,6 +11,9 @@ export const Nav = styled.nav`
   display: none;
   grid-column-start: 1;
   grid-column-end: span 2;
+  left: ${leftPosition};
+  position: sticky;
+  top: 0;
 
   ${minWidth('medium')} {
     display: block;
@@ -20,13 +23,11 @@ export const Nav = styled.nav`
 export const List = styled.ul`
   font-family: PressStart2P;
   font-size: ${rem(12)};
-  left: ${leftPosition};
   list-style-type: none;
   margin: 0;
   padding: 0;
   padding-top: ${topPadding};
   position: sticky;
-  top: 0;
   width: ${width};
 `;
 
