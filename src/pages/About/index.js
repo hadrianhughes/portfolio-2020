@@ -15,6 +15,7 @@ const About = ({ context }) => {
   return (
     <Page id="about" theRef={ref}>
       <Heading text={context.heading} animate={activeSection === 'about'} />
+      <p>{context.text}</p>
     </Page>
   );
 };

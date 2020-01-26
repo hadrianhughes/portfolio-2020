@@ -22,7 +22,7 @@ export const Nav = styled.nav`
 
 export const List = styled.ul`
   font-family: PressStart2P;
-  font-size: ${rem(12)};
+  font-size: ${rem(14)};
   list-style-type: none;
   margin: 0;
   padding: 0;

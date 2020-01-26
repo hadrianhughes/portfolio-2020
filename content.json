@@ -100,6 +100,8 @@
     ]
   },
   "about": {
-    "heading": "About Me"
+    "heading": "About Me",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet ligula sit amet urna mattis eleifend sed vitae leo. Quisque interdum nisl velit, a viverra turpis luctus sit amet. Sed quis urna elit. Donec lacinia orci arcu, nec tempus erat ullamcorper a. Fusce facilisis, nunc sit amet dignissim tempor, purus justo mattis justo, sed lacinia nibh sapien vestibulum lacus. Sed id sem quam. Duis sit amet nunc non nisl vestibulum vehicula nec id tortor. In condimentum nisl quis nisl consectetur, in pharetra risus laoreet.\nSed fringilla nibh vel est porta mollis. Suspendisse pretium placerat accumsan. Maecenas molestie hendrerit eros, at ornare erat dapibus facilisis. Quisque volutpat tempor neque vel eleifend. Nulla commodo lacinia augue. Sed et dignissim nisi, ac gravida lorem. Donec tortor ex, mollis non metus in, dapibus finibus quam. Praesent dui enim, facilisis eget quam vitae, pharetra pulvinar lacus. Praesent luctus rutrum sem malesuada vestibulum."
+
   }
 }

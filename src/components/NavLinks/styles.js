@@ -27,7 +27,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  padding: ${rem(5)} 0;
+  padding: ${rem(10)} 0;
 
   &:hover {
     &::before, a {
