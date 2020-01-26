@@ -9,7 +9,7 @@ const HStyles = css`
   font-family: PressStart2P;
   font-size: ${rem(fontSize)};
 
-  ${minWidth('medium')} {
+  ${minWidth('large')} {
     font-size: ${props => rem(props.main ? desktopMainFontSize : desktopFontSize)};
   }
 `;
@@ -32,7 +32,7 @@ export const Span = styled.span`
       animation-delay: ${props.index}s;
       animation-fill-mode: forwards;
 
-      ${minWidth('medium')} {
+      ${minWidth('large')} {
         animation-name: desktop_typewriter${props.index};
       }
     ` : ''}

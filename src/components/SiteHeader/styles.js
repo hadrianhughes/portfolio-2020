@@ -9,7 +9,7 @@ export const StyledHeader = styled.header`
   width: 100%;
   z-index: 1000;
 
-  ${minWidth('medium')} {
+  ${minWidth('large')} {
     position: static;
   }
 `;
@@ -21,7 +21,7 @@ export const LogoLink = styled(Link)`
   padding: ${rem(10)};
   width: ${rem(75)};
 
-  ${minWidth('medium')} {
+  ${minWidth('large')} {
     width: ${rem(100)};
   }
 `;

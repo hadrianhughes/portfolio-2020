@@ -21,7 +21,7 @@ export const List = styled.ul`
   padding: 0;
   width: auto;
 
-  ${minWidth('medium')} {
+  ${minWidth('large')} {
     font-size: ${desktopFontSize};
   }
 `;

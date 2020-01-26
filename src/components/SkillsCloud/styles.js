@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   position: relative;
 
-  ${minWidth('medium')} {
+  ${minWidth('large')} {
     width: ${width};
   }
 `;
@@ -41,7 +41,7 @@ export const List = styled.ul`
       width: 100%;
     }
 
-    ${minWidth('medium')} {
+    ${minWidth('large')} {
       max-height: none;
 
       &::after {
@@ -60,7 +60,7 @@ const ItemStyles = css`
   text-align: left;
   width: 100%;
 
-  ${minWidth('medium')} {
+  ${minWidth('large')} {
     margin: ${rem(20)} 0;
     padding: 0;
     text-align: center;
@@ -73,8 +73,8 @@ export const PrimaryItem = styled.li`
 
   font-size: ${rem(48)};
 
-  ${minWidth('medium')} {
-    width: 30%;
+  ${minWidth('large')} {
+    width: 50%;
   }
 `;
 
@@ -83,7 +83,7 @@ export const SecondaryItem = styled.li`
 
   font-size: ${rem(32)};
 
-  ${minWidth('medium')} {
+  ${minWidth('large')} {
     width: 25%;
   }
 `;
@@ -93,7 +93,7 @@ export const TertiaryItem = styled.li`
 
   font-size: ${rem(24)};
 
-  ${minWidth('medium')} {
+  ${minWidth('large')} {
     width: 25%;
   }
 `;
@@ -112,7 +112,7 @@ export const ExpandButton = styled.button`
 
   ${props => `background-image: url(/icons/${props.collapsed ? 'expand' : 'collapse'}.svg);`}
 
-  ${minWidth('medium')} {
+  ${minWidth('large')} {
     display: none;
   }
 `;

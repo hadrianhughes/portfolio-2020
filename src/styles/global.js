@@ -25,14 +25,18 @@ const GlobalStyles = createGlobalStyle`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    ${minWidth('medium')} {
+    ${minWidth('large')} {
       grid-template-columns: repeat(8, 1fr);
     }
   }
 
   p {
     margin: ${rem(50)} 0;
-    padding: 0 ${rem(100)};
+    padding: 0 ${rem(20)};
+
+    ${minWidth('large')} {
+      padding: 0 ${rem(100)};
+    }
   }
 
   ${fonts}

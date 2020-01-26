@@ -36,6 +36,7 @@ export const ScrollProvider = ({ sectionNames, children }) => {
 
   const setSectionRef = (name, ref) => {
     const section = sections[name];
+
     if (section) {
       section.setter(ref);
 

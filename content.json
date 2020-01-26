@@ -18,6 +18,7 @@
       "text": "About Me"
     }
   ],
+  "copyright": "Copyright \u00A9 {{currentYear}} Hadrian Hughes. All rights reserved.",
   "home": {
     "headingLineOne": "Lorem ipsum dolor.",
     "headingLineTwo": "Sit amet."
@@ -30,12 +31,12 @@
         "level": 1
       },
       {
-        "name": "ES6",
+        "name": "TypeScript",
         "level": 1
       },
       {
-        "name": "TypeScript",
-        "level": 1
+        "name": "ES6",
+        "level": 2
       },
       {
         "name": "Webpack",

@@ -7,6 +7,7 @@ import SkillsPage from './pages/Skills';
 import AboutMe from './pages/About';
 import Nav from './components/ProgressLinks';
 import SiteHeader from './components/SiteHeader';
+import SiteFooter from './components/SiteFooter';
 import { get } from './utils';
 
 const App = ({ context }) => (
@@ -20,6 +21,7 @@ const App = ({ context }) => (
         <SkillsPage context={context.skills} />
         <AboutMe context={context.about} />
       </main>
+      <SiteFooter copyright={context.copyright} />
     </ScrollProvider>
   </Fragment>
 );

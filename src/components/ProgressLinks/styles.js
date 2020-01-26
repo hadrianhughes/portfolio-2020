@@ -15,7 +15,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
 
-  ${minWidth('medium')} {
+  ${minWidth('large')} {
     display: block;
   }
 `;

@@ -11,5 +11,6 @@ export const colors = {
 
 export const breakpoints = {
   small: 375,
-  medium: 768
+  medium: 768,
+  large: 1024
 };
