@@ -20,8 +20,8 @@
   ],
   "copyright": "Copyright \u00A9 {{currentYear}} Hadrian Hughes. All rights reserved.",
   "home": {
-    "headingLineOne": "Lorem ipsum dolor.",
-    "headingLineTwo": "Sit amet."
+    "headingLineOne": "Hi, I'm Hadrian",
+    "headingLineTwo": "I write code."
   },
   "skills": {
     "heading": "My Skills",

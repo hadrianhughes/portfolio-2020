@@ -6,7 +6,6 @@ import HomePage from './pages/Home';
 import SkillsPage from './pages/Skills';
 import AboutMe from './pages/About';
 import Nav from './components/ProgressLinks';
-import SiteHeader from './components/SiteHeader';
 import SiteFooter from './components/SiteFooter';
 import { get } from './utils';
 
@@ -14,7 +13,6 @@ const App = ({ context }) => (
   <Fragment>
     <GlobalStyles />
     <ScrollProvider sectionNames={context.navLinks.map(get(['name']))}>
-      <SiteHeader />
       <main>
         <HomePage context={context.home} navLinks={context.navLinks} />
         <Nav links={context.navLinks} />
