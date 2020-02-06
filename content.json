@@ -8,14 +8,14 @@
       "noHomePage": true
     },
     {
-      "href": "#skills",
-      "name": "skills",
-      "text": "My Skills"
-    },
-    {
       "href": "#about",
       "name": "about",
       "text": "About Me"
+    },
+    {
+      "href": "#skills",
+      "name": "skills",
+      "text": "My Skills"
     }
   ],
   "copyright": "Copyright \u00A9 {{currentYear}} Hadrian Hughes. All rights reserved.",

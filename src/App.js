@@ -16,8 +16,8 @@ const App = ({ context }) => (
       <main>
         <HomePage context={context.home} navLinks={context.navLinks} />
         <Nav links={context.navLinks} />
-        <SkillsPage context={context.skills} />
         <AboutMe context={context.about} />
+        <SkillsPage context={context.skills} />
       </main>
       <SiteFooter copyright={context.copyright} />
     </ScrollProvider>

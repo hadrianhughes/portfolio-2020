@@ -18,6 +18,7 @@ export const List = styled.ul`
 export const Item = styled.li`
   background-color: ${colors.blueLightGrey};
   display: flex;
+  margin: ${rem(20)} 0;
 `;
 
 export const IconPortion = styled.div`
@@ -41,14 +42,19 @@ export const Icon = styled.img`
   top: 50%;
   transform: translate(-50%, -50%);
   width: calc(${iconPortionSize} - 20px);
+
+  ${minWidth('large')} {
+    width: calc(${largeIconPortionSize} - 50px);
+  }
 `;
 
 export const ItemHeading = styled.h3`
-  font-size: ${rem(32)};
+  font-size: ${rem(24)};
   line-height: ${iconPortionSize};
   margin: 0 ${rem(10)};
 
   ${minWidth('large')} {
+    font-size: ${rem(32)};
     margin: ${rem(20)};
   }
 `;
