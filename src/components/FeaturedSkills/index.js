@@ -6,7 +6,8 @@ import {
   IconPortion,
   TextPortion,
   Icon,
-  ItemHeading
+  ItemHeading,
+  ItemDescription
 } from './styles';
 
 const FeaturedSkills = ({ skills }) => (
@@ -19,6 +20,7 @@ const FeaturedSkills = ({ skills }) => (
           </IconPortion>
           <TextPortion>
             <ItemHeading>{skill.name}</ItemHeading>
+            <ItemDescription>{skill.description}</ItemDescription>
           </TextPortion>
         </Item>
       )

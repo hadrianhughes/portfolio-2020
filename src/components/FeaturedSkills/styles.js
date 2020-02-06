@@ -50,11 +50,14 @@ export const Icon = styled.img`
 
 export const ItemHeading = styled.h3`
   font-size: ${rem(24)};
-  line-height: ${iconPortionSize};
-  margin: 0 ${rem(10)};
+  margin: ${rem(10, 20)};
 
   ${minWidth('large')} {
     font-size: ${rem(32)};
-    margin: ${rem(20)};
   }
+`;
+
+export const ItemDescription = styled.p`
+  margin: ${rem(20)};
+  padding: 0;
 `;
