@@ -25,6 +25,23 @@
   },
   "skills": {
     "heading": "My Skills",
+    "featuredSkills": [
+      {
+        "name": "React",
+        "icon": "/icons/react.png",
+        "description": "Lorem ipsum dolor sit amet"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "/icons/typescript.png",
+        "description": "Lorem ipsum dolor sit amet"
+      },
+      {
+        "name": "Node.js",
+        "icon": "/icons/nodejs.svg",
+        "description": "Lorem ipsum dolor sit amet"
+      }
+    ],
     "skills": [
       {
         "name": "React",
