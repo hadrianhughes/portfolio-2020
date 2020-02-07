@@ -29,17 +29,17 @@
       {
         "name": "React",
         "icon": "/icons/react.png",
-        "description": "Lorem ipsum dolor sit amet"
+        "description": "React is my framework of choice for building fast, native app-like interfaces. I'm experienced with Hooks and the Context API, as well as Redux, and I'm comfortable working with functional components."
       },
       {
         "name": "TypeScript",
         "icon": "/icons/typescript.png",
-        "description": "Lorem ipsum dolor sit amet"
+        "description": "Being a fan of type-safe functional languages like Haskell, I appreciate what TypeScript adds to JavaScript's toolset. When developing more complex web apps, I always opt to use TypeScript over vanilla JavaScript to reduce runtime errors and code with more confidence."
       },
       {
         "name": "Node.js",
         "icon": "/icons/nodejs.svg",
-        "description": "Lorem ipsum dolor sit amet"
+        "description": "From writing simple scripts to building micro-services and proxies, to fully fledged web servers, I've had a lot of experience working with Node.js, as well as Express. I find being able to work with JavaScript on the front and back end improves my ability to jump between the two to design full stack solutions."
       }
     ],
     "skills": [

@@ -54,10 +54,16 @@ export const ItemHeading = styled.h3`
 
   ${minWidth('large')} {
     font-size: ${rem(32)};
+    margin: ${rem(20)};
+    margin-bottom: ${rem(10)};
   }
 `;
 
 export const ItemDescription = styled.p`
   margin: ${rem(20)};
   padding: 0;
+
+  ${minWidth('large')} {
+    margin-top: ${rem(10)};
+  }
 `;
