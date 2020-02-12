@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { useDebouncedCallback } from 'use-debounce';
 
 export const ScrollContext = React.createContext();
 
@@ -32,13 +33,14 @@ export const ScrollProvider = ({ sectionNames, children }) => {
     }
   };
 
+  const [debouncedHandleScroll] = useDebouncedCallback(handleScroll, 100);
+
   useEffect(() => {
     if (
       !didInit &&
       Object.keys(sections).every(key => typeof sections[key].position === 'number')
     ) {
-      window.addEventListener('scroll', handleScroll);
-
+      window.addEventListener('scroll', debouncedHandleScroll);
       setDidInit(true);
     }
   }, [sections]);
