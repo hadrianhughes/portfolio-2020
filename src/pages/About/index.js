@@ -1,24 +1,14 @@
-import React, { useContext, useRef, useEffect } from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { ScrollContext } from '../../context/ScrollContext';
-import Page from '../../components/Page';
 import Heading from '../../components/Heading';
+import PageHOC from '../../components/Page/PageHOC';
 
-const About = ({ context }) => {
-  const ref = useRef();
-  const { setSectionRef } = useContext(ScrollContext);
-
-  useEffect(() => {
-    setSectionRef('about', ref.current);
-  }, []);
-
-  return (
-    <Page id="about" theRef={ref}>
-      <Heading text={context.heading} />
-      <p>{context.text}</p>
-    </Page>
-  );
-};
+const About = ({ context }) => (
+  <Fragment>
+    <Heading text={context.heading} />
+    <p>{context.text}</p>
+  </Fragment>
+);
 
 About.propTypes = {
   context: PropTypes.object
@@ -28,4 +18,4 @@ About.defaultProps = {
   context: {}
 };
 
-export default About;
+export default PageHOC('about')(About);

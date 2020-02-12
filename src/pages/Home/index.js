@@ -1,30 +1,17 @@
-import React, { useContext, useEffect, useRef } from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { ScrollContext } from '../../context/ScrollContext';
-import Page from '../../components/Page';
 import Heading from '../../components/Heading';
 import NavLinks from '../../components/NavLinks';
+import PageHOC from '../../components/Page/PageHOC';
 
-const Home = ({ context, navLinks }) => {
-  const ref = useRef();
-  const { setSectionRef } = useContext(ScrollContext);
-
-  useEffect(() => {
-    setSectionRef('home', ref.current);
-  }, []);
-
-  return (
-    <Page
-      theRef={ref}
-      id="home"
-      topPadding fullWidth>
-      <Heading
-        lines={[context.headingLineOne, context.headingLineTwo]}
-        main />
-      <NavLinks links={navLinks} />
-    </Page>
-  );
-};
+const Home = ({ context, navLinks }) => (
+  <Fragment>
+    <Heading
+      lines={[context.headingLineOne, context.headingLineTwo]}
+      main />
+    <NavLinks links={navLinks} />
+  </Fragment>
+);
 
 Home.propTypes = {
   context: PropTypes.object,
@@ -36,4 +23,4 @@ Home.defaultProps = {
   navLinks: []
 };
 
-export default Home;
+export default PageHOC('home')(Home);
