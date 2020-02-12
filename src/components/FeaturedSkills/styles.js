@@ -7,7 +7,7 @@ const largeIconPortionSize = rem(200);
 
 export const List = styled.ul`
   list-style-type: none;
-  margin: 0;
+  margin: ${rem(50)} 0 0;
   padding: 0 ${rem(20)};
 
   ${minWidth('large')} {
