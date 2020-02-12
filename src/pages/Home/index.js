@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { ScrollContext } from '../../context/ScrollContext';
 import Page from '../../components/Page';
@@ -7,18 +7,11 @@ import NavLinks from '../../components/NavLinks';
 
 const Home = ({ context, navLinks }) => {
   const ref = useRef();
-  const { activeSection, setSectionRef } = useContext(ScrollContext);
-  const [entered, setEntered] = useState(false);
+  const { setSectionRef } = useContext(ScrollContext);
 
   useEffect(() => {
     setSectionRef('home', ref.current);
   }, []);
-
-  useEffect(() => {
-    if (activeSection === 'home' && !entered) {
-      setEntered(true);
-    }
-  }, [activeSection]);
 
   return (
     <Page
@@ -27,7 +20,6 @@ const Home = ({ context, navLinks }) => {
       topPadding fullWidth>
       <Heading
         lines={[context.headingLineOne, context.headingLineTwo]}
-        animate={entered}
         main />
       <NavLinks links={navLinks} />
     </Page>
