@@ -1,58 +1,60 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 export const ScrollContext = React.createContext();
 
+const SECTION_OFFSET = 200;
+
 export const ScrollProvider = ({ sectionNames, children }) => {
+  const [didInit, setDidInit] = useState(false);
   const [activeSection, setActiveSection] = useState(sectionNames[0]);
 
   const sections = sectionNames.reduce((acc, name) => {
-    const [ el, setter ] = useState(null);
+    const [ position, setter ] = useState(null);
 
     return {
       ...acc,
-      [name]: { el, setter }
+      [name]: { position, setter }
     };
   }, {});
 
-  const handleIntersect = sectionName => entries => {
-    const [ intersection ] = entries;
+  const getActiveSection = pos =>
+    Object.keys(sections)
+      .reduce((lastSection, key) =>
+        pos >= sections[key].position - SECTION_OFFSET ? key : lastSection, sectionNames[0]
+      );
 
-    if (intersection.isIntersecting) {
-      setActiveSection(sectionName);
+  const handleScroll = () => {
+    const newActiveSection = getActiveSection(window.scrollY);
+
+    if (newActiveSection !== activeSection) {
+      setActiveSection(newActiveSection);
     }
   };
 
-  const observers = sectionNames.reduce((acc, name) => {
-    const observer = new IntersectionObserver(handleIntersect(name), {
-      threshold: 0.8
-    });
+  useEffect(() => {
+    if (
+      !didInit &&
+      Object.keys(sections).every(key => typeof sections[key].position === 'number')
+    ) {
+      window.addEventListener('scroll', handleScroll);
 
-    return {
-      ...acc,
-      [name]: observer
-    };
-  }, {});
+      setDidInit(true);
+    }
+  }, [sections]);
 
   const setSectionRef = (name, ref) => {
     const section = sections[name];
 
     if (section) {
-      section.setter(ref);
-
-      observers[name].disconnect();
-      observers[name].observe(ref);
+      section.setter(ref.getBoundingClientRect().top + window.scrollY);
     }
   };
 
   const scrollTo = name => {
     const section = sections[name];
     if (section) {
-      if (name === 'home') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        section.el.scrollIntoView({ behavior: 'smooth' });
-      }
+      window.scrollTo({ top: section.position, behavior: 'smooth' });
     }
   };
 
