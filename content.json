@@ -29,7 +29,7 @@
       {
         "name": "React",
         "icon": "/icons/react.png",
-        "description": "React is my framework of choice for building fast, native app-like interfaces. I'm experienced with Hooks and the Context API, as well as Redux, and I'm comfortable working with functional components."
+        "description": "React is my framework of choice for building fast, native app-like interfaces. I'm experienced with Hooks and the Context API, as well as Redux, and I'm comfortable working with functional as well as class components."
       },
       {
         "name": "TypeScript",
