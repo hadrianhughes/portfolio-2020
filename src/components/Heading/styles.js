@@ -4,17 +4,20 @@ import { rem, minWidth } from '../../styles/tools';
 
 const fontSize = 32;
 const mainFontSize = 48;
+const mainFontSizeMobile = 40;
 const mainWidth = 500;
 
 const HStyles = css`
   font-family: 'Bitter', sans-serif;
-  font-size: ${props => rem(props.main ? mainFontSize : fontSize)};
-  margin: 0 auto;
+  font-size: ${props => rem(props.main ? mainFontSizeMobile : fontSize)};
   padding: 0 ${rem(20)};
+  ${props => props.main ? 'width: 80%;' : ''}
 
-  ${minWidth('large')} {
-    ${props => props.main ? `width: ${rem(mainWidth)}` : ''};
+  ${minWidth('medium')} {
+    font-size: ${props => rem(props.main ? mainFontSize : fontSize)};
+    margin: 0 auto;
     padding: 0;
+    ${props => props.main ? `width: ${rem(mainWidth)};` : ''}
   }
 `;
 

@@ -4,14 +4,13 @@ import { rem, minWidth } from '../../styles/tools';
 
 const topMargin = rem(75);
 const previewMaxHeight = rem(300);
-const width = rem(900);
 
 export const Wrapper = styled.div`
   margin: 0 auto;
   position: relative;
 
-  ${minWidth('large')} {
-    width: ${width};
+  ${minWidth('medium')} {
+    padding: 0 ${rem(50)};
   }
 `;
 
@@ -41,7 +40,7 @@ export const List = styled.ul`
       width: 100%;
     }
 
-    ${minWidth('large')} {
+    ${minWidth('medium')} {
       max-height: none;
 
       &::after {
@@ -60,7 +59,7 @@ const ItemStyles = css`
   text-align: left;
   width: 100%;
 
-  ${minWidth('large')} {
+  ${minWidth('medium')} {
     margin: ${rem(20)} 0;
     padding: 0;
     text-align: center;
@@ -73,7 +72,7 @@ export const PrimaryItem = styled.li`
 
   font-size: ${rem(48)};
 
-  ${minWidth('large')} {
+  ${minWidth('medium')} {
     width: 50%;
   }
 `;
@@ -83,7 +82,7 @@ export const SecondaryItem = styled.li`
 
   font-size: ${rem(32)};
 
-  ${minWidth('large')} {
+  ${minWidth('medium')} {
     width: 25%;
   }
 `;
@@ -93,7 +92,7 @@ export const TertiaryItem = styled.li`
 
   font-size: ${rem(24)};
 
-  ${minWidth('large')} {
+  ${minWidth('medium')} {
     width: 25%;
   }
 `;
@@ -112,7 +111,7 @@ export const ExpandButton = styled.button`
 
   ${props => `background-image: url(/icons/${props.collapsed ? 'expand' : 'collapse'}.svg);`}
 
-  ${minWidth('large')} {
+  ${minWidth('medium')} {
     display: none;
   }
 `;

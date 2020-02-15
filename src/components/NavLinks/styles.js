@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   margin: ${rem(32)} auto 0;
   padding: 0 ${rem(20)};
 
-  ${minWidth('large')} {
+  ${minWidth('medium')} {
     padding: 0;
     width: ${width};
   }
@@ -26,7 +26,7 @@ export const List = styled.ul`
   padding: 0;
   width: auto;
 
-  ${minWidth('large')} {
+  ${minWidth('medium')} {
     font-size: ${desktopFontSize};
   }
 `;
