@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import { colors } from '../../styles/settings';
 import { rem, minWidth } from '../../styles/tools';
 
-const iconPortionSize = rem(80);
-const largeIconPortionSize = rem(200);
+const largeIconPortionSize = rem(150);
 
 export const List = styled.ul`
   list-style-type: none;
@@ -17,34 +16,32 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   background-color: ${colors.blueLightGrey};
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   margin: ${rem(20)} 0;
 `;
 
 export const IconPortion = styled.div`
-  height: ${iconPortionSize};
+  grid-column-end: span 3;
+  grid-column-start: 1;
+  padding: ${rem(10)};
   position: relative;
-  width: ${iconPortionSize};
-
-  ${minWidth('large')} {
-    height: ${largeIconPortionSize};
-    width: ${largeIconPortionSize};
-  }
 `;
 
 export const TextPortion = styled.div`
-  flex: 1;
+  grid-column-end: span 12;
+  grid-column-start: 4;
 `;
 
 export const Icon = styled.img`
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: calc(${iconPortionSize} - 20px);
+  width: 100%;
 
-  ${minWidth('large')} {
-    width: calc(${largeIconPortionSize} - 60px);
+  ${minWidth('medium')} {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: ${largeIconPortionSize};
   }
 `;
 
@@ -64,6 +61,6 @@ export const ItemDescription = styled.p`
   padding: 0;
 
   ${minWidth('large')} {
-    margin-top: ${rem(10)};
+    margin-bottom: ${rem(30)};
   }
 `;
