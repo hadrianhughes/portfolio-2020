@@ -5,7 +5,6 @@ import {
   List,
   PrimaryItem,
   SecondaryItem,
-  TertiaryItem,
   ExpandButton
 } from './styles';
 
@@ -16,7 +15,6 @@ const SkillsCloud = ({ skills }) => {
 
   const primary = skills.filter(filterLevel(1));
   const secondary = skills.filter(filterLevel(2));
-  const tertiary = skills.filter(filterLevel(3));
 
   const mapItem = Tag => skill => <Tag key={skill.name}>{skill.name}</Tag>;
 
@@ -25,7 +23,6 @@ const SkillsCloud = ({ skills }) => {
       <List preview={isPreview}>
         {primary.map(mapItem(PrimaryItem))}
         {secondary.map(mapItem(SecondaryItem))}
-        {tertiary.map(mapItem(TertiaryItem))}
       </List>
       <ExpandButton
         onClick={() => setPreview(!isPreview)}

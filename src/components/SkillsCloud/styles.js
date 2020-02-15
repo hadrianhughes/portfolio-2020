@@ -70,16 +70,6 @@ const ItemStyles = css`
 export const PrimaryItem = styled.li`
   ${ItemStyles}
 
-  font-size: ${rem(48)};
-
-  ${minWidth('medium')} {
-    width: 50%;
-  }
-`;
-
-export const SecondaryItem = styled.li`
-  ${ItemStyles}
-
   font-size: ${rem(32)};
 
   ${minWidth('medium')} {
@@ -87,7 +77,7 @@ export const SecondaryItem = styled.li`
   }
 `;
 
-export const TertiaryItem = styled.li`
+export const SecondaryItem = styled.li`
   ${ItemStyles}
 
   font-size: ${rem(24)};

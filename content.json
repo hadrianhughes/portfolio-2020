@@ -45,59 +45,59 @@
     "skills": [
       {
         "name": "ES6",
-        "level": 2
+        "level": 1
       },
       {
         "name": "Webpack",
-        "level": 2
-      },
-      {
-        "name": "Canvas",
-        "level": 3
-      },
-      {
-        "name": "Swift",
-        "level": 3
+        "level": 1
       },
       {
         "name": "Redux",
-        "level": 2
+        "level": 1
       },
       {
         "name": "Jest",
-        "level": 2
+        "level": 1
       },
       {
         "name": "Express",
+        "level": 1
+      },
+      {
+        "name": "Canvas",
+        "level": 2
+      },
+      {
+        "name": "Swift",
         "level": 2
       },
       {
         "name": "Contentful",
-        "level": 3
-      },
-      {
-        "name": "Koa",
-        "level": 3
-      },
-      {
-        "name": "PWA",
-        "level": 3
-      },
-      {
-        "name": "Web Workers",
-        "level": 3
-      },
-      {
-        "name": "Sass",
-        "level": 3
-      },
-      {
-        "name": "TDD",
         "level": 2
       },
       {
+        "name": "Koa",
+        "level": 2
+      },
+      {
+        "name": "PWA",
+        "level": 2
+      },
+      {
+        "name": "Web Workers",
+        "level": 2
+      },
+      {
+        "name": "Sass",
+        "level": 2
+      },
+      {
+        "name": "TDD",
+        "level": 1
+      },
+      {
         "name": "CSS Grid",
-        "level": 3
+        "level": 2
       }
     ]
   },
