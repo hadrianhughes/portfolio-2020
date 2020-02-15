@@ -13,7 +13,7 @@ export const Section = styled.section`
   min-height: 100vh;
   padding-top: ${props => props.topPadding ? megaTopPaddingMobile : topPaddingMobile};
 
-  ${minWidth('large')} {
+  ${minWidth('medium')} {
     padding-top: ${props => props.topPadding ? megaTopPadding : topPadding};
 
     ${props => props.fullWidth ? `

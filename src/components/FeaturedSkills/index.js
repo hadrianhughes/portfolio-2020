@@ -7,10 +7,11 @@ import {
   TextPortion,
   Icon,
   ItemHeading,
-  ItemDescription
+  ItemDescription,
+  OpenButton
 } from './styles';
 
-const FeaturedSkills = ({ skills }) => (
+const FeaturedSkills = ({ skills, openSkill, onOpen }) => (
   <List>
     {
       skills.map((skill, index) =>
@@ -19,8 +20,13 @@ const FeaturedSkills = ({ skills }) => (
             <Icon src={skill.icon} alt={skill.name} />
           </IconPortion>
           <TextPortion>
-            <ItemHeading>{skill.name}</ItemHeading>
-            <ItemDescription>{skill.description}</ItemDescription>
+            <ItemHeading>
+              <span>{skill.name}</span>
+              <OpenButton onClick={onOpen(index)}>
+                {openSkill === index ? '-' : '+'}
+              </OpenButton>
+            </ItemHeading>
+            <ItemDescription open={openSkill === index}>{skill.description}</ItemDescription>
           </TextPortion>
         </Item>
       )
@@ -35,11 +41,18 @@ FeaturedSkills.propTypes = {
       icon: PropTypes.string,
       description: PropTypes.string
     })
-  )
+  ),
+  openSkill: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.oneOf([null])
+  ]),
+  onOpen: PropTypes.func
 };
 
 FeaturedSkills.defaultProps = {
-  skills: []
+  skills: [],
+  openSkill: null,
+  onOpen: () => {}
 };
 
 export default FeaturedSkills;

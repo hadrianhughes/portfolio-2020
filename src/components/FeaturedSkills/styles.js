@@ -10,7 +10,7 @@ export const List = styled.ul`
   margin: ${rem(50)} 0 0;
   padding: 0 ${rem(20)};
 
-  ${minWidth('large')} {
+  ${minWidth('medium')} {
     padding: 0 ${rem(50)};
   }
 `;
@@ -35,13 +35,13 @@ export const TextPortion = styled.div`
 `;
 
 export const Icon = styled.img`
-  width: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
 
   ${minWidth('medium')} {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
     width: ${largeIconPortionSize};
   }
 `;
@@ -49,8 +49,9 @@ export const Icon = styled.img`
 export const ItemHeading = styled.h3`
   font-size: ${rem(24)};
   margin: ${rem(30, 20)};
+  position: relative;
 
-  ${minWidth('large')} {
+  ${minWidth('medium')} {
     font-size: ${rem(32)};
     margin: ${rem(20)};
     margin-bottom: ${rem(10)};
@@ -59,13 +60,31 @@ export const ItemHeading = styled.h3`
 
 export const ItemDescription = styled.p`
   margin: 0;
-  max-height: ${previewMaxHeight};
+  max-height: ${props => props.open ? previewMaxHeight : 0};
   overflow: hidden;
   padding: 0 ${rem(20)};
+  padding-bottom: ${props => props.open ? rem(20) : 0};
+  transition: 0.5s max-height, 0.5s padding-bottom;
 
-  ${minWidth('large')} {
+  ${minWidth('medium')} {
     margin: ${rem(20)};
     margin-bottom: ${rem(30)};
+    max-height: none;
     padding: 0;
+  }
+`;
+
+export const OpenButton = styled.button`
+  background: none;
+  border: none;
+  font-size: ${rem(40)};
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  ${minWidth('medium')} {
+    display: none;
   }
 `;

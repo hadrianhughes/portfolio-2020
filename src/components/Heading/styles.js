@@ -11,7 +11,7 @@ const HStyles = css`
   font-family: 'Bitter', sans-serif;
   font-size: ${props => rem(props.main ? mainFontSizeMobile : fontSize)};
   padding: 0 ${rem(20)};
-  ${props => props.main ? 'width: 80%;' : ''}
+  ${props => props.main ? 'width: 70%;' : ''}
 
   ${minWidth('medium')} {
     font-size: ${props => rem(props.main ? mainFontSize : fontSize)};
