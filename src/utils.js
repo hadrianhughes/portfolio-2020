@@ -5,3 +5,6 @@ export const get = path => (object = {}) => {
   if (path.length === 1) return value;
   return get(path.slice(1))(value);
 };
+
+export const getElementPosition = element =>
+  element.getBoundingClientRect().top + window.scrollY;
