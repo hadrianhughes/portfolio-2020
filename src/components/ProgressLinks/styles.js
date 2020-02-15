@@ -3,7 +3,7 @@ import { colors } from '../../styles/settings';
 import { rem, minWidth } from '../../styles/tools';
 import Link from '../Link';
 
-const leftPosition = rem(100);
+const leftPosition = rem(75);
 const topPadding = rem(240);
 const width = rem(200);
 
