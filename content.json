@@ -53,11 +53,11 @@
       },
       {
         "name": "Canvas",
-        "level": 2
+        "level": 3
       },
       {
         "name": "Swift",
-        "level": 2
+        "level": 3
       },
       {
         "name": "Redux",
@@ -70,10 +70,6 @@
       {
         "name": "Express",
         "level": 2
-      },
-      {
-        "name": "Elm",
-        "level": 3
       },
       {
         "name": "Contentful",
@@ -97,7 +93,7 @@
       },
       {
         "name": "TDD",
-        "level": 3
+        "level": 2
       },
       {
         "name": "CSS Grid",

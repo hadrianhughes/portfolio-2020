@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { colors } from '../../styles/settings';
 import { rem, minWidth } from '../../styles/tools';
 
-const topMargin = rem(75);
+const topMargin = rem(48);
 const previewMaxHeight = rem(300);
 
 export const Wrapper = styled.div`
@@ -83,7 +83,7 @@ export const SecondaryItem = styled.li`
   font-size: ${rem(32)};
 
   ${minWidth('medium')} {
-    width: 25%;
+    width: 33%;
   }
 `;
 
