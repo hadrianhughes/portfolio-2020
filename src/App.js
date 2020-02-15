@@ -5,6 +5,7 @@ import { ScrollProvider } from './context/ScrollContext';
 import HomePage from './pages/Home';
 import SkillsPage from './pages/Skills';
 import AboutMe from './pages/About';
+import Experience from './pages/Experience';
 import Nav from './components/ProgressLinks';
 import SiteFooter from './components/SiteFooter';
 import { get } from './utils';
@@ -18,6 +19,7 @@ const App = ({ context }) => (
         <Nav links={context.navLinks} />
         <AboutMe context={context.about} />
         <SkillsPage context={context.skills} />
+        <Experience context={context.experience} />
       </main>
       <SiteFooter copyright={context.copyright} />
     </ScrollProvider>

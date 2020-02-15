@@ -16,6 +16,11 @@
       "href": "#skills",
       "name": "skills",
       "text": "My Skills"
+    },
+    {
+      "href": "#experience",
+      "name": "experience",
+      "text": "My Experience"
     }
   ],
   "copyright": "Copyright \u00A9 {{currentYear}} Hadrian Hughes. All rights reserved.",
@@ -105,5 +110,8 @@
     "heading": "About Me",
     "text": "A full stack web developer with a passion for quality, scalable code and inspiring user experiences, based in Edinburgh. A natural problem solver, I am able to apply my varied experience of modern web technologies to find the best approach. Always striving to be on the cutting edge of web technologies, I thrive in environments with plenty of opportunities to learn."
 
+  },
+  "experience": {
+    "heading": "Experience"
   }
 }

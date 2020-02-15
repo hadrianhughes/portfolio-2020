@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { rem, minWidth } from '../../styles/tools';
 
-const topPadding = rem(50);
+const topPadding = rem(75);
 const topPaddingMobile = rem(100);
 const megaTopPadding = rem(300);
 const megaTopPaddingMobile = rem(150);
