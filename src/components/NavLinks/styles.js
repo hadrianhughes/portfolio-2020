@@ -3,7 +3,7 @@ import { colors } from '../../styles/settings';
 import { rem, minWidth } from '../../styles/tools';
 import Link from '../Link';
 
-const fontSize = rem(14);
+const fontSize = rem(20);
 const desktopFontSize = rem(24);
 const width = rem(500);
 
