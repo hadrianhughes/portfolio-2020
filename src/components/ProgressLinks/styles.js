@@ -4,7 +4,7 @@ import { rem, minWidth } from '../../styles/tools';
 import Link from '../Link';
 
 const leftPosition = rem(100);
-const topPadding = rem(100);
+const topPadding = rem(240);
 const width = rem(200);
 
 export const Nav = styled.nav`
