@@ -103,8 +103,11 @@
   },
   "about": {
     "heading": "About Me",
-    "text": "A full stack web developer with a passion for quality, scalable code and inspiring user experiences, based in Edinburgh. A natural problem solver, I am able to apply my varied experience of modern web technologies to find the best approach. Always striving to be on the cutting edge of web technologies, I thrive in environments with plenty of opportunities to learn."
 
+    "paragraphs": [
+      "A full stack web developer with a passion for quality, scalable code and inspiring user experiences, based in Edinburgh. I specialise in React and Node.js, but I have a lifelong love of technology, and thrive in environments with plenty of opportunities to learn.",
+      "I have experience working on a diverse variety of projects, and have built end-to-end solutions for clients such as The Co-operative, SailGP and Lexus."
+    ]
   },
   "experience": {
     "heading": "Experience"

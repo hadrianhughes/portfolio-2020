@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Heading from '../../components/Heading';
+import Profile from '../../components/Profile';
 import PageHOC from '../../components/Page/PageHOC';
 
 const About = ({ context }) => (
   <Fragment>
     <Heading text={context.heading} />
-    <p>{context.text}</p>
+    <Profile paragraphs={context.paragraphs} />
   </Fragment>
 );
 
