@@ -3,6 +3,7 @@ import { colors } from '../../styles/settings';
 import { rem, minWidth } from '../../styles/tools';
 
 const largeIconPortionSize = rem(150);
+const previewMaxHeight = rem(500);
 
 export const List = styled.ul`
   list-style-type: none;
@@ -47,7 +48,7 @@ export const Icon = styled.img`
 
 export const ItemHeading = styled.h3`
   font-size: ${rem(24)};
-  margin: ${rem(10, 20)};
+  margin: ${rem(30, 20)};
 
   ${minWidth('large')} {
     font-size: ${rem(32)};
@@ -57,10 +58,14 @@ export const ItemHeading = styled.h3`
 `;
 
 export const ItemDescription = styled.p`
-  margin: ${rem(20)};
-  padding: 0;
+  margin: 0;
+  max-height: ${previewMaxHeight};
+  overflow: hidden;
+  padding: 0 ${rem(20)};
 
   ${minWidth('large')} {
+    margin: ${rem(20)};
     margin-bottom: ${rem(30)};
+    padding: 0;
   }
 `;
