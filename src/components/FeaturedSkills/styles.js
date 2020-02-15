@@ -44,7 +44,7 @@ export const Icon = styled.img`
   width: calc(${iconPortionSize} - 20px);
 
   ${minWidth('large')} {
-    width: calc(${largeIconPortionSize} - 50px);
+    width: calc(${largeIconPortionSize} - 60px);
   }
 `;
 
