@@ -13,15 +13,18 @@ const content = require('../content.json');
 const renderFullPage = (context, html) => oneLine`
   <!DOCTYPE html>
   <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-      <script>window.APP_CONTEXT = ${JSON.stringify(context)};</script>
-      <title>${context.title}</title>
-    </head>
-    <body>
-      ${html}
-    </body>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="A full stack web developer with a passion for quality, scalable code and inspiring user experiences, based in Edinburgh." />
+    <title>${context.title}</title>
+    <script>window.APP_CONTEXT = ${JSON.stringify(context)};</script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Bitter&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root">${html}</div>
+    <script src="/bundle.js"></script>
+  </body>
   </html>
 `;
 
