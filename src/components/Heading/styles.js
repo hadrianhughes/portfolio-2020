@@ -5,7 +5,7 @@ import { rem, minWidth } from '../../styles/tools';
 const fontSize = 32;
 const mainFontSize = 48;
 const mainFontSizeMobile = 40;
-const mainWidth = 500;
+const mainWidth = 512;
 
 const HStyles = css`
   font-family: 'Bitter', sans-serif;
