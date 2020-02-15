@@ -5,11 +5,16 @@ import Link from '../Link';
 
 const fontSize = rem(14);
 const desktopFontSize = rem(16);
+const width = rem(500);
 
 export const Wrapper = styled.div`
-  margin-top: ${rem(50)};
-  display: flex;
-  justify-content: center;
+  margin: ${rem(32)} auto 0;
+  padding: 0 ${rem(20)};
+
+  ${minWidth('large')} {
+    padding: 0;
+    width: ${width};
+  }
 `;
 
 export const List = styled.ul`
@@ -31,7 +36,7 @@ export const Item = styled.li`
 
   &:hover {
     &::before, a {
-      color: ${colors.yellow};
+      color: ${colors.flair};
     }
 
     &::before {

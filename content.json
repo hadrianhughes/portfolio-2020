@@ -20,8 +20,8 @@
   ],
   "copyright": "Copyright \u00A9 {{currentYear}} Hadrian Hughes. All rights reserved.",
   "home": {
-    "headingLineOne": "Hi, I'm Hadrian",
-    "headingLineTwo": "I write code."
+    "headingLineOne": "Hadrian Hughes",
+    "headingLineTwo": "Full Stack Developer"
   },
   "skills": {
     "heading": "My Skills",

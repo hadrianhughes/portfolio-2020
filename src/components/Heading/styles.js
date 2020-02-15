@@ -1,16 +1,20 @@
 import styled, { css } from 'styled-components';
+import { colors } from '../../styles/settings';
 import { rem, minWidth } from '../../styles/tools';
 
-const fontSize = 16;
-const desktopFontSize = 24;
-const desktopMainFontSize = 32;
+const fontSize = 32;
+const mainFontSize = 48;
+const mainWidth = 500;
 
 const HStyles = css`
-  font-family: PressStart2P;
-  font-size: ${rem(fontSize)};
+  font-family: 'Bitter', sans-serif;
+  font-size: ${props => rem(props.main ? mainFontSize : fontSize)};
+  margin: 0 auto;
+  padding: 0 ${rem(20)};
 
   ${minWidth('large')} {
-    font-size: ${props => rem(props.main ? desktopMainFontSize : desktopFontSize)};
+    ${props => props.main ? `width: ${rem(mainWidth)}` : ''};
+    padding: 0;
   }
 `;
 
@@ -19,18 +23,9 @@ export const H2 = styled.h2`${HStyles}`;
 
 export const Span = styled.span`
   display: block;
-  margin: 10px auto;
-  overflow: hidden;
-  text-align: center;
-  white-space: nowrap;
+  text-align: ${props => props.main ? 'left' : 'center'};
 
-  @keyframes typewriter${props => props.index} {
-    0% { width: 0px; }
-    100% { width: ${props => props.length * fontSize}px; }
-  }
-
-  @keyframes desktop_typewriter${props => props.index} {
-    0% { width: 0px; }
-    100% { width: ${props => props.length * (props.main ? desktopMainFontSize : desktopFontSize)}px; }
+  &:nth-child(even) {
+    color: ${colors.flair};
   }
 `;

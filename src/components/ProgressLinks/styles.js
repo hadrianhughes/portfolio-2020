@@ -34,10 +34,10 @@ export const List = styled.ul`
 export const StyledLink = styled(Link)`
   text-decoration: none;
 
-  ${props => props.active ? `color: ${colors.yellow};` : ''}
+  ${props => props.active ? `color: ${colors.flair};` : ''}
 
   &:hover {
-    color: ${colors.yellow};
+    color: ${colors.flair};
 
     &::before {
       animation: 1s wiggle ease-in-out infinite;
@@ -49,7 +49,7 @@ export const StyledLink = styled(Link)`
     display: inline-block;
     margin-right: ${rem(30)};
 
-    ${props => props.active ? `color: ${colors.yellow};` : '' }
+    ${props => props.active ? `color: ${colors.flair};` : '' }
   }
 `;
 

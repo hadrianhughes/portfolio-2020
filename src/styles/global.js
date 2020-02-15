@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background-color: ${colors.blueGrey};
-    font-family: 'Open Sans';
+    font-family: 'Merriweather', serif;
     font-size: 18px;
     margin: 0;
   }

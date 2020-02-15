@@ -13,6 +13,7 @@ const html = oneLine`
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>${content.title}</title>
     <script>window.APP_CONTEXT = ${JSON.stringify(content)};</script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Bitter&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>
