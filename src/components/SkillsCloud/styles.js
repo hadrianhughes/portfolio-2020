@@ -53,7 +53,7 @@ export const List = styled.ul`
 
 const ItemStyles = css`
   cursor: default;
-  font-family: 'Open Sans';
+  font-family: 'Bitter', sans-serif;
   font-weight: 800;
   margin: 0;
   padding: 0 ${rem(20)};

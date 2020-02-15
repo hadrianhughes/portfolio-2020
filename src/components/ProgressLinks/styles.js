@@ -21,8 +21,8 @@ export const Nav = styled.nav`
 `;
 
 export const List = styled.ul`
-  font-family: PressStart2P;
-  font-size: ${rem(14)};
+  font-family: 'Bitter', sans-serif;
+  font-size: ${rem(22)};
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -54,5 +54,5 @@ export const StyledLink = styled(Link)`
 `;
 
 export const Item = styled.li`
-  margin: ${rem(20)} 0;
+  margin: ${rem(15)} 0;
 `;

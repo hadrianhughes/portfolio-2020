@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 import { colors, pageMaxWidth } from './settings';
 import { minWidth, rem } from './tools';
 import animations from './animations';
-import fonts from './fonts';
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -38,8 +37,6 @@ const GlobalStyles = createGlobalStyle`
       padding: 0 ${rem(100)};
     }
   }
-
-  ${fonts}
 
   ${animations}
 `;

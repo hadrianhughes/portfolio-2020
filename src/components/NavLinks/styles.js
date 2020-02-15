@@ -4,7 +4,7 @@ import { rem, minWidth } from '../../styles/tools';
 import Link from '../Link';
 
 const fontSize = rem(14);
-const desktopFontSize = rem(16);
+const desktopFontSize = rem(24);
 const width = rem(500);
 
 export const Wrapper = styled.div`
@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
 `;
 
 export const List = styled.ul`
-  font-family: PressStart2P;
+  font-family: 'Bitter', sans-serif;
   font-size: ${fontSize};
   display: inline-block;
   list-style-type: none;
@@ -32,7 +32,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  padding: ${rem(10)} 0;
+  padding: ${rem(5)} 0;
 
   &:hover {
     &::before, a {
