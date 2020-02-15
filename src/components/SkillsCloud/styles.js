@@ -3,10 +3,10 @@ import { colors } from '../../styles/settings';
 import { rem, minWidth } from '../../styles/tools';
 
 const topMargin = rem(48);
-const previewMaxHeight = rem(300);
+const previewMaxHeight = rem(200);
 
 export const Wrapper = styled.div`
-  margin: 0 auto;
+  margin: 0 auto ${rem(50)};
   position: relative;
 
   ${minWidth('medium')} {
