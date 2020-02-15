@@ -11,6 +11,7 @@ const html = oneLine`
   <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="A full stack web developer with a passion for quality, scalable code and inspiring user experiences, based in Edinburgh." />
     <title>${content.title}</title>
     <script>window.APP_CONTEXT = ${JSON.stringify(content)};</script>
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Bitter&display=swap" rel="stylesheet" />
