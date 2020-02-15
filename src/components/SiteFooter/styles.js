@@ -3,6 +3,7 @@ import { colors } from '../../styles/settings';
 import { rem } from '../../styles/tools';
 
 export const StyledFooter = styled.footer`
+  font-family: 'Bitter', sans-serif;
   padding: ${rem(30)};
   position: relative;
   text-align: center;

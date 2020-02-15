@@ -40,6 +40,7 @@ export const ScrollProvider = ({ sectionNames, children }) => {
       !didInit &&
       Object.keys(sections).every(key => typeof sections[key].position === 'number')
     ) {
+      handleScroll();
       window.addEventListener('scroll', debouncedHandleScroll);
       setDidInit(true);
     }
