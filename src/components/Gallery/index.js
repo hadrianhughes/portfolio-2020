@@ -25,8 +25,7 @@ export const ItemSchema = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   details: PropTypes.string.isRequired,
-  thumbnail: PropTypes.string.isRequired,
-  fullImage: PropTypes.string,
+  image: PropTypes.string,
   linkUrl: PropTypes.string,
   linkText: PropTypes.string
 };
