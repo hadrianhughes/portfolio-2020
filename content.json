@@ -175,7 +175,7 @@
         "title": "Portfolio Site",
         "details": [
           "This site!",
-          "This portfolio site is a static site built with React and hosted on Netlify. Check out the code on my GitHub."
+          "This portfolio site is a static site built with React and hosted on Netlify. It scores 100% in Lighthouse for performance, accessibility and SEO. Check out the code on my GitHub."
         ]
       }
     ]
