@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { colors } from '../../styles/settings';
-import { rem } from '../../styles/tools';
+import { rem, minWidth } from '../../styles/tools';
 
 export const Wrapper = styled.div`
   background-color: ${colors.blueLightGrey};
@@ -11,10 +11,15 @@ export const Wrapper = styled.div`
 `;
 
 export const List = styled.ul`
+  grid-column-end: span 3;
   list-style-type: none;
   margin: 0;
   padding: 0;
   padding-left: ${rem(10)};
+
+  ${minWidth('medium')} {
+    grid-column-end: 2;
+  }
 `;
 
 export const ListItem = styled.li`
