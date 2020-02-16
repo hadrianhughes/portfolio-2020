@@ -1,19 +1,18 @@
 import styled from 'styled-components';
-import { colors } from '../../styles/settings';
+import { colors, homeComponentsWidth } from '../../styles/settings';
 import { rem, minWidth } from '../../styles/tools';
 import Link from '../Link';
 
 const fontSize = rem(20);
 const desktopFontSize = rem(24);
-const width = rem(500);
 
 export const Wrapper = styled.div`
-  margin: ${rem(32)} auto 0;
+  margin: ${rem(20)} auto 0;
   padding: 0 ${rem(20)};
 
   ${minWidth('medium')} {
     padding: 0;
-    width: ${width};
+    width: ${rem(homeComponentsWidth)};
   }
 `;
 

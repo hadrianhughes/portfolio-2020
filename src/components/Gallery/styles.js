@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: ${rem(50, 20)};
+  min-height: ${rem(250)};
   padding: ${rem(20)};
 `;
 

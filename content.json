@@ -26,7 +26,24 @@
   "copyright": "Copyright \u00A9 {{currentYear}} Hadrian Hughes. All rights reserved.",
   "home": {
     "headingLineOne": "Hadrian Hughes",
-    "headingLineTwo": "Full Stack Developer"
+    "headingLineTwo": "Full Stack Developer",
+    "socialMedia": [
+      {
+        "icon": "/icons/github.svg",
+        "link": "https://github.com/hadrianhughes",
+        "alt": "GitHub"
+      },
+      {
+        "icon": "/icons/linkedin.svg",
+        "link": "https://www.linkedin.com/in/hadrian-hughes-549856111",
+        "alt": "LinkedIn"
+      },
+      {
+        "icon": "/icons/codepen.svg",
+        "link": "https://codepen.io/hadrianhughes",
+        "alt": "Codepen"
+      }
+    ]
   },
   "skills": {
     "heading": "My Skills",

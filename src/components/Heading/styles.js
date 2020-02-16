@@ -1,11 +1,10 @@
 import styled, { css } from 'styled-components';
-import { colors } from '../../styles/settings';
+import { colors, homeComponentsWidth } from '../../styles/settings';
 import { rem, minWidth } from '../../styles/tools';
 
 const fontSize = 32;
 const mainFontSize = 48;
 const mainFontSizeMobile = 40;
-const mainWidth = 512;
 
 const HStyles = css`
   font-family: 'Bitter', sans-serif;
@@ -23,7 +22,7 @@ const HStyles = css`
     font-size: ${props => rem(props.main ? mainFontSize : fontSize)};
     margin: 0 auto;
     padding: 0;
-    ${props => props.main ? `width: ${rem(mainWidth)};` : ''}
+    ${props => props.main ? `width: ${rem(homeComponentsWidth)};` : ''}
   }
 `;
 
