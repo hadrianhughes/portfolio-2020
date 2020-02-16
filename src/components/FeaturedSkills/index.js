@@ -34,13 +34,15 @@ const FeaturedSkills = ({ skills, openSkill, onOpen }) => (
   </List>
 );
 
+export const skillSchema = {
+  name: PropTypes.string,
+  icon: PropTypes.string,
+  description: PropTypes.string
+};
+
 FeaturedSkills.propTypes = {
   skills: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string,
-      icon: PropTypes.string,
-      description: PropTypes.string
-    })
+    PropTypes.shape(skillSchema)
   ),
   openSkill: PropTypes.oneOfType([
     PropTypes.number,

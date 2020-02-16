@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import FeaturedSkills from './index';
+import { skillSchema } from './index';
 
 const FeaturedSkillsContainer = ({ skills }) => {
   const [openSkill, setOpenSkill] = useState(null);
@@ -16,7 +17,9 @@ const FeaturedSkillsContainer = ({ skills }) => {
 };
 
 FeaturedSkillsContainer.propTypes = {
-  skills: PropTypes.array
+  skills: PropTypes.arrayOf(
+    PropTypes.shape(skillSchema)
+  )
 };
 
 FeaturedSkillsContainer.defaultProps = {
