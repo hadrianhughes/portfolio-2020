@@ -95,6 +95,8 @@ export const ItemButton = styled.button`
 `;
 
 export const CollapseButton = styled.button`
+  background: none;
+  border: none;
   font-size: ${rem(40)};
   position: absolute;
   right: 0;
