@@ -34,7 +34,7 @@ export const ScrollProvider = ({ sectionNames, children }) => {
     }
   };
 
-  const [debouncedHandleScroll] = useDebouncedCallback(handleScroll, 100);
+  const [debouncedHandleScroll] = useDebouncedCallback(handleScroll, 50);
 
   useEffect(() => {
     if (
