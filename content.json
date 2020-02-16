@@ -115,6 +115,26 @@
     ]
   },
   "experience": {
-    "heading": "My Experience"
+    "heading": "My Experience",
+    "galleryItems": [
+      {
+        "id": "sailgp",
+        "title": "SailGP",
+        "details": "Lorem ipsum dolor sit amet",
+        "fullImage": "/img/sailgp-full.webp"
+      },
+      {
+        "id": "coop",
+        "title": "Co-op Food",
+        "details": "Lorem ipsum dolor sit amet",
+        "fullImage": "/img/sailgp-full.webp"
+      },
+      {
+        "id": "lexus",
+        "title": "Lexus",
+        "details": "Lorem ipsum dolor sit amet",
+        "fullImage": "/img/sailgp-full.webp"
+      }
+    ]
   }
 }
