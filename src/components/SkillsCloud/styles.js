@@ -24,8 +24,13 @@ export const List = styled.ul`
   max-height: ${rem(1000)};
   overflow: hidden;
   padding: 0;
+  padding-bottom: ${rem(20)};
   position: relative;
   transition: 0.5s max-height;
+
+  ${minWidth('medium')} {
+    padding: 0;
+  }
 
   ${props => props.preview ? `
     max-height: ${previewMaxHeight};
@@ -56,13 +61,12 @@ const ItemStyles = css`
   font-weight: 800;
   margin: 0;
   padding: 0 ${rem(20)};
-  text-align: left;
+  text-align: center;
   width: 100%;
 
   ${minWidth('medium')} {
     margin: ${rem(20)} 0;
     padding: 0;
-    text-align: center;
     width: auto;
   }
 `;
