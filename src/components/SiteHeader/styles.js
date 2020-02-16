@@ -4,31 +4,26 @@ import Link from '../Link';
 
 const leftOffset = 10;
 const leftOffsetLarge = 100;
-const paddingTop = 10;
-const paddingTopLarge = 50;
+const topOffset = 10;
+const topOffsetLarge = 50;
 
 export const StyledHeader = styled.header`
-  left: 0;
-  padding-top: ${rem(paddingTop)};
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1000;
-
-  ${minWidth('large')} {
-    padding-top: ${rem(paddingTopLarge)};
-  }
 `;
 
 export const LogoLink = styled(Link)`
   box-sizing: border-box;
   display: block;
-  margin-left: ${rem(leftOffset)};
+  left: ${rem(leftOffset)};
   padding: ${rem(10)};
+  position: fixed;
+  top: ${rem(topOffset)};
   width: ${rem(75)};
+  z-index: 100;
 
   ${minWidth('large')} {
-    margin-left: ${rem(leftOffsetLarge)};
+    left: ${rem(leftOffsetLarge)};
+    top: ${rem(topOffsetLarge)};
     width: ${rem(100)};
   }
 `;

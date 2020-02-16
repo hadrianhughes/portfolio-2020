@@ -12,13 +12,20 @@ export const Wrapper = styled.div`
   padding: ${rem(20)};
 `;
 
-export const List = styled.ul`
+export const ListWrapper = styled.div`
   grid-column-end: span 3;
+  position: relative;
+
+  ${minWidth('medium')} {
+    grid-column-end: 2;
+  }
+`;
+
+export const List = styled.ul`
   list-style-type: none;
   margin: 0;
   overflow: hidden;
   padding: 0;
-  position: relative;
 
   ${props => props.collapsed ? `
     max-height: ${itemHeight};
@@ -31,9 +38,18 @@ export const List = styled.ul`
       display: none;
     }
   ` : ''}
+`;
+
+export const Addendum = styled.span`
+  display: none;
+  font-family: 'Bitter', serif;
+  font-size: ${rem(14)};
+  letter-spacing: ${rem(1)};
+  margin-top: ${rem(20)};
+  padding-left: ${rem(17)};
 
   ${minWidth('medium')} {
-    grid-column-end: 2;
+    display: block;
   }
 `;
 

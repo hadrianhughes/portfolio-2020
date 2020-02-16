@@ -4,7 +4,9 @@ import GalleryDisplay from './GalleryDisplay';
 import {
   Wrapper,
   List,
+  ListWrapper,
   ListItem,
+  Addendum,
   ItemButton,
   CollapseButton
 } from './styles';
@@ -17,18 +19,21 @@ const Gallery = ({
   onCollapse
 }) => (
   <Wrapper>
-    <List collapsed={collapsed}>
-      {
-        items.map(item =>
-          <ListItem key={item.id} active={activeID === item.id}>
-            <ItemButton onClick={setActive(item.id)}>{item.title}</ItemButton>
-          </ListItem>
-        )
-      }
+    <ListWrapper>
+      <List collapsed={collapsed}>
+        {
+          items.map(item =>
+            <ListItem key={item.id} active={activeID === item.id}>
+              <ItemButton onClick={setActive(item.id)}>{item.title}</ItemButton>
+            </ListItem>
+          )
+        }
+      </List>
+      <Addendum>More to come...</Addendum>
       <CollapseButton onClick={onCollapse}>
         {collapsed ? '+' : '-'}
       </CollapseButton>
-    </List>
+    </ListWrapper>
     <GalleryDisplay {...items.find(x => x.id === activeID)} />
   </Wrapper>
 );
