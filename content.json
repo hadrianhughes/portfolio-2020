@@ -120,7 +120,10 @@
       {
         "id": "sailgp",
         "title": "SailGP",
-        "details": "Lorem ipsum dolor sit amet",
+        "details": [
+          "In 2019, I worked with a group of talented developers and designers at AmazeRealise to build the SailGP website. The site was built with React and Node.js, using the Contentful CMS.",
+          "This project presented various unique challenges, as the site needed to accomodate streaming live events as well as being constantly updated with new information about live races. The modern design of the site allowed me to make use of newer technologies such as CSS Grid, however it was important to convey the unusual design without compromising on performance and accessibility."
+        ],
         "image": "/img/sailgp-full.webp",
         "link": "https://sailgp.com",
         "extraIcon": "/img/ar-logo.webp",
@@ -129,7 +132,11 @@
       {
         "id": "coop",
         "title": "Co-op Food",
-        "details": "Lorem ipsum dolor sit amet",
+        "details": [
+          "During my time at AmazeRealise, I worked as one of two developers on the Co-operative Food website. This project was the first of AmazeRealise’s React sites to go live.",
+          "The site was built with a Node.js server and used the Contentful headless CMS. This project provided me with a great experience of designing an end-to-end solution, and acting as a full stack developer using technologies such as Azure and Algolia for the site’s search.",
+          "Along with the main Co-op Food site, I also built various seasonal themed mini-sites for The Co-op, which all necessitated a fast turnaround."
+        ],
         "image": "/img/coop-full.webp",
         "extraIcon": "/img/ar-logo.webp",
         "extraIconAlt": "AmazeRealise"
@@ -137,7 +144,10 @@
       {
         "id": "lexus",
         "title": "Lexus",
-        "details": "Lorem ipsum dolor sit amet",
+        "details": [
+          "I’ve also been part of AmazeRealise’s largest development team in working on the Lexus website. This went from day-to-day change requests and bug fixing to building new areas of the site.",
+          "I was also chosen for my React experience to be the sole developer on a progressive web app to be used by Lexus representatives at their events. This necessitated that I learn about service workers to ensure that submissions aren’t lost, even when the user is offline."
+        ],
         "image": "/img/lexus-full.webp",
         "link": "https://lexus.co.uk",
         "extraIcon": "/img/ar-logo.webp",
@@ -146,7 +156,10 @@
       {
         "id": "portfolio",
         "title": "Portfolio Site",
-        "details": "Lorem ipsum dolor sit amet"
+        "details": [
+          "This site!",
+          "This portfolio site is a static site built with React and hosted on Netlify. Check out the code on my GitHub."
+        ]
       }
     ]
   }

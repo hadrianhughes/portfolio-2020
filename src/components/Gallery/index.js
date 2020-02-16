@@ -36,7 +36,7 @@ const Gallery = ({
 export const ItemSchema = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  details: PropTypes.string.isRequired,
+  details: PropTypes.arrayOf(PropTypes.string).isRequired,
   image: PropTypes.string,
   link: PropTypes.string,
   extraIcon: PropTypes.string,

@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { ItemSchema } from './index';
 
 import {
   Display,
@@ -28,7 +28,9 @@ const GalleryDisplay = ({
           null
       }
     </DisplayHeader>
-    <DisplayDetails>{details}</DisplayDetails>
+    {
+      details.map((d, i) => <DisplayDetails key={i}>{d}</DisplayDetails>)
+    }
     {
       image ?
         (() => {
@@ -48,14 +50,7 @@ const GalleryDisplay = ({
   </Display>
 );
 
-GalleryDisplay.propTypes = {
-  title: PropTypes.string.isRequired,
-  details: PropTypes.string.isRequired,
-  link: PropTypes.string,
-  extraIcon: PropTypes.string,
-  extraIconAlt: PropTypes.string,
-  image: PropTypes.string
-};
+GalleryDisplay.propTypes = ItemSchema;
 
 GalleryDisplay.defaultProps = {
   link: '',

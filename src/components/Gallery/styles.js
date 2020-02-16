@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   background-color: ${colors.blueLightGrey};
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: ${rem(50, 20)} 0;
+  margin: ${rem(50, 20)};
   padding: ${rem(20)};
 `;
 
