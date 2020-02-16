@@ -4,12 +4,19 @@ import {
   Wrapper,
   List,
   ListItem,
-  ItemButton
+  ItemButton,
+  CollapseButton
 } from './styles';
 
-const Gallery = ({ items, activeID, setActive }) => (
+const Gallery = ({
+  items,
+  activeID,
+  setActive,
+  collapsed,
+  onCollapse
+}) => (
   <Wrapper>
-    <List>
+    <List collapsed={collapsed}>
       {
         items.map(item =>
           <ListItem key={item.id} active={activeID === item.id}>
@@ -17,6 +24,9 @@ const Gallery = ({ items, activeID, setActive }) => (
           </ListItem>
         )
       }
+      <CollapseButton onClick={onCollapse}>
+        {collapsed ? '+' : '-'}
+      </CollapseButton>
     </List>
   </Wrapper>
 );
@@ -35,13 +45,17 @@ Gallery.propTypes = {
     PropTypes.shape(ItemSchema)
   ),
   activeID: PropTypes.string,
-  setActive: PropTypes.func
+  setActive: PropTypes.func,
+  collapsed: PropTypes.bool,
+  onCollapse: PropTypes.func
 };
 
 Gallery.defaultProps = {
   items: [],
   activeID: '',
-  setActive: () => {}
+  setActive: () => {},
+  collapsed: false,
+  onCollapse: () => {}
 };
 
 export default Gallery;
