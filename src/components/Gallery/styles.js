@@ -124,12 +124,10 @@ export const DisplayHeading = styled.h3`
 `;
 
 export const HeadingIcon = styled.img`
-  display: none;
-  margin-left: ${rem(20)};
-  width: ${rem(50)};
+  width: ${rem(30)};
 
   ${minWidth('medium')} {
-    display: inline-block;
+    width: ${rem(50)};
   }
 `;
 

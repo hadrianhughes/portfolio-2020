@@ -6,7 +6,6 @@ import {
   DisplayHeader,
   DisplayHeading,
   HeadingIcon,
-  DisplayLink,
   DisplayDetails,
   Screenshot
 } from './styles';
@@ -21,22 +20,10 @@ const GalleryDisplay = ({
 }) => (
   <Display>
     <DisplayHeader>
-      <DisplayHeading>
-        <span>{title}</span>
-        {
-          extraIcon ?
-            <HeadingIcon src={extraIcon} alt={extraIconAlt} />
-            :
-            null
-        }
-      </DisplayHeading>
+      <DisplayHeading>{title}</DisplayHeading>
       {
-        link ?
-          <DisplayLink
-            href={link}
-            target="_blank">
-            Visit Site
-          </DisplayLink>
+        extraIcon ?
+          <HeadingIcon src={extraIcon} alt={extraIconAlt} />
           :
           null
       }
@@ -44,7 +31,17 @@ const GalleryDisplay = ({
     <DisplayDetails>{details}</DisplayDetails>
     {
       image ?
-        <Screenshot src={image} alt={`Screenshot of ${title}`} />
+        (() => {
+          const ScreenshotWithProps = <Screenshot src={image} alt={`Screenshot of ${title}`} />;
+
+          if (link) {
+            return (
+              <a href={link} rel="noopener noreferrer" target="_blank">{ScreenshotWithProps}</a>
+            );
+          }
+
+          return ScreenshotWithProps;
+        })()
         :
         null
     }

@@ -130,7 +130,7 @@
         "id": "coop",
         "title": "Co-op Food",
         "details": "Lorem ipsum dolor sit amet",
-        "fullImage": "/img/sailgp-full.webp",
+        "image": "/img/coop-full.webp",
         "extraIcon": "/img/ar-logo.webp",
         "extraIconAlt": "AmazeRealise"
       },
@@ -138,9 +138,15 @@
         "id": "lexus",
         "title": "Lexus",
         "details": "Lorem ipsum dolor sit amet",
-        "fullImage": "/img/sailgp-full.webp",
+        "image": "/img/lexus-full.webp",
+        "link": "https://lexus.co.uk",
         "extraIcon": "/img/ar-logo.webp",
         "extraIconAlt": "AmazeRealise"
+      },
+      {
+        "id": "portfolio",
+        "title": "Portfolio Site",
+        "details": "Lorem ipsum dolor sit amet"
       }
     ]
   }
