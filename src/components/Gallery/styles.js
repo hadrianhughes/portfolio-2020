@@ -23,6 +23,10 @@ export const List = styled.ul`
   ${props => props.collapsed ? `
     max-height: ${itemHeight};
 
+    ${minWidth('medium')} {
+      max-height: none;
+    }
+
     ${ListItem} {
       display: none;
     }
@@ -50,7 +54,7 @@ export const ListItem = styled.li`
     }
   ` : `
     ${minWidth('medium')} {
-      display: block;
+      display: block !important;
     }
   `}
 `;
