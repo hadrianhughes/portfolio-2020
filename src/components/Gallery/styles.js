@@ -15,7 +15,6 @@ export const List = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-left: ${rem(10)};
 
   ${minWidth('medium')} {
     grid-column-end: 2;
@@ -23,7 +22,7 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  padding: ${rem(10)} 0;
+  padding: ${rem(10)};
   transition: 0.2s padding-left ease-out;
 
   ${props => props.active ? `
@@ -42,5 +41,7 @@ export const ItemButton = styled.button`
   cursor: pointer;
   font-family: 'Bitter', sans-serif;
   font-size: ${rem(22)};
+  text-align: left;
   transition: 0.2s color;
+  width: 100%;
 `;
