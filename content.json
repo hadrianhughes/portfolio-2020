@@ -121,7 +121,8 @@
         "id": "sailgp",
         "title": "SailGP",
         "details": "Lorem ipsum dolor sit amet",
-        "fullImage": "/img/sailgp-full.webp"
+        "fullImage": "/img/sailgp-full.webp",
+        "link": "https://sailgp.com"
       },
       {
         "id": "coop",

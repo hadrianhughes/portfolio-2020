@@ -86,3 +86,43 @@ export const CollapseButton = styled.button`
     display: none;
   }
 `;
+
+export const Display = styled.div`
+  background-color: ${colors.altBlueGrey};
+  grid-column-end: span 3;
+  grid-column-start: 1;
+  margin-top: ${rem(10)};
+  padding: ${rem(20)};
+
+  ${minWidth('medium')} {
+    grid-column-start: 2;
+    margin: 0;
+  }
+`;
+
+export const DisplayHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const DisplayHeading = styled.h3`
+  font-family: 'Bitter', sans-serif;
+  font-size: ${rem(24)};
+  margin: 0;
+
+  ${minWidth('medium')} {
+    font-size: ${rem(32)};
+  }
+`;
+
+export const DisplayDetails = styled.p`
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  margin-top: ${rem(20)};
+  padding: 0;
+`;
+
+export const DisplayLink = styled.a`
+  font-family: 'Bitter', sans-serif;
+  font-size: ${rem(20)};
+`;
