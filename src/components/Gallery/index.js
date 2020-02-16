@@ -1,16 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import GalleryDisplay from './GalleryDisplay';
 import {
   Wrapper,
   List,
   ListItem,
   ItemButton,
-  CollapseButton,
-  Display,
-  DisplayHeader,
-  DisplayHeading,
-  DisplayLink,
-  DisplayDetails
+  CollapseButton
 } from './styles';
 
 const Gallery = ({
@@ -33,34 +29,7 @@ const Gallery = ({
         {collapsed ? '+' : '-'}
       </CollapseButton>
     </List>
-    <Display>
-      {
-        (() => {
-          const activeItem =
-            items
-              .find(x => x.id === activeID);
-
-          return (
-            <Fragment>
-              <DisplayHeader>
-                <DisplayHeading>{activeItem.title}</DisplayHeading>
-                {
-                  activeItem.link ?
-                    <DisplayLink
-                      href={activeItem.link}
-                      target="_blank">
-                      Visit Site
-                    </DisplayLink>
-                    :
-                    null
-                }
-              </DisplayHeader>
-              <DisplayDetails>{activeItem.details}</DisplayDetails>
-            </Fragment>
-          );
-        })()
-      }
-    </Display>
+    <GalleryDisplay {...items.find(x => x.id === activeID)} />
   </Wrapper>
 );
 
@@ -69,7 +38,9 @@ export const ItemSchema = {
   title: PropTypes.string.isRequired,
   details: PropTypes.string.isRequired,
   image: PropTypes.string,
-  link: PropTypes.string
+  link: PropTypes.string,
+  extraIcon: PropTypes.string,
+  extraIconAlt: PropTypes.string
 };
 
 Gallery.propTypes = {

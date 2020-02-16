@@ -70,7 +70,11 @@ export const ItemButton = styled.button`
   top: 50%;
   transform: translateY(-50%);
   transition: 0.2s color;
-  width: 100%;
+  width: 60%;
+
+  ${minWidth('medium')} {
+    width: 100%;
+  }
 `;
 
 export const CollapseButton = styled.button`
@@ -110,8 +114,22 @@ export const DisplayHeading = styled.h3`
   font-size: ${rem(24)};
   margin: 0;
 
+  span, img {
+    vertical-align: middle;
+  }
+
   ${minWidth('medium')} {
     font-size: ${rem(32)};
+  }
+`;
+
+export const HeadingIcon = styled.img`
+  display: none;
+  margin-left: ${rem(20)};
+  width: ${rem(50)};
+
+  ${minWidth('medium')} {
+    display: inline-block;
   }
 `;
 
@@ -125,4 +143,9 @@ export const DisplayDetails = styled.p`
 export const DisplayLink = styled.a`
   font-family: 'Bitter', sans-serif;
   font-size: ${rem(20)};
+`;
+
+export const Screenshot = styled.img`
+  margin-top: ${rem(20)};
+  width: 100%;
 `;

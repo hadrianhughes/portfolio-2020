@@ -121,20 +121,26 @@
         "id": "sailgp",
         "title": "SailGP",
         "details": "Lorem ipsum dolor sit amet",
-        "fullImage": "/img/sailgp-full.webp",
-        "link": "https://sailgp.com"
+        "image": "/img/sailgp-full.webp",
+        "link": "https://sailgp.com",
+        "extraIcon": "/img/ar-logo.webp",
+        "extraIconAlt": "AmazeRealise"
       },
       {
         "id": "coop",
         "title": "Co-op Food",
         "details": "Lorem ipsum dolor sit amet",
-        "fullImage": "/img/sailgp-full.webp"
+        "fullImage": "/img/sailgp-full.webp",
+        "extraIcon": "/img/ar-logo.webp",
+        "extraIconAlt": "AmazeRealise"
       },
       {
         "id": "lexus",
         "title": "Lexus",
         "details": "Lorem ipsum dolor sit amet",
-        "fullImage": "/img/sailgp-full.webp"
+        "fullImage": "/img/sailgp-full.webp",
+        "extraIcon": "/img/ar-logo.webp",
+        "extraIconAlt": "AmazeRealise"
       }
     ]
   }
