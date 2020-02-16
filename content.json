@@ -16,6 +16,11 @@
       "href": "#skills",
       "name": "skills",
       "text": "My Skills"
+    },
+    {
+      "href": "#experience",
+      "name": "experience",
+      "text": "My Experience"
     }
   ],
   "copyright": "Copyright \u00A9 {{currentYear}} Hadrian Hughes. All rights reserved.",
@@ -110,6 +115,6 @@
     ]
   },
   "experience": {
-    "heading": "Experience"
+    "heading": "My Experience"
   }
 }
