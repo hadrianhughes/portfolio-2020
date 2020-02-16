@@ -11,7 +11,7 @@ export const StyledFooter = styled.footer`
   &::before {
     background-color: ${colors.white};
     content: '';
-    height: 2px;
+    height: 3px;
     left: 50%;
     position: absolute;
     top: 0;

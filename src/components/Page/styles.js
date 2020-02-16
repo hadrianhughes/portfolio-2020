@@ -3,10 +3,10 @@ import { colors } from '../../styles/settings';
 import { rem, minWidth } from '../../styles/tools';
 
 const topPadding = rem(130);
-const topPaddingMobile = rem(100);
+const topPaddingMobile = rem(80);
 const megaTopPadding = rem(300);
 const megaTopPaddingMobile = rem(150);
-const separatorWidth = rem(300);
+const separatorWidth = rem(200);
 
 export const Section = styled.section`
   box-sizing: border-box;

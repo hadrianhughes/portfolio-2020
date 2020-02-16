@@ -81,8 +81,10 @@ export const OpenButton = styled.button`
   padding: 0;
   position: absolute;
   right: 0;
+  text-align: right;
   top: 50%;
   transform: translateY(-50%);
+  width: 100%;
 
   ${minWidth('medium')} {
     display: none;
