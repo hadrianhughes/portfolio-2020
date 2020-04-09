@@ -11,6 +11,7 @@ export const Photo = styled.img`
   margin: 0 auto;
   overflow: hidden;
   padding: ${rem(20)} 0;
+  width: ${rem(200)};
 `;
 
 export const Paragraph = styled.p`
