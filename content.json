@@ -39,6 +39,11 @@
         "alt": "LinkedIn"
       },
       {
+        "icon": "/icons/devto.svg",
+        "link": "https://dev.to/hadrianhughes",
+        "alt": "Dev"
+      },
+      {
         "icon": "/icons/codepen.svg",
         "link": "https://codepen.io/hadrianhughes",
         "alt": "Codepen"
